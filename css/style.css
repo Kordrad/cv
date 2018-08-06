@@ -478,7 +478,7 @@ section aside {
 footer {
 	font-style: italic;
 	font-size: 13.2px;
-	font-size: 1.2rem;
+	font-size: 0.9rem;
 }
 
 
@@ -555,7 +555,7 @@ footer {
 		padding-top: 75px;
 	}
 	#right-site section {
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 
 	#left-site section h2:hover {
