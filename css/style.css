@@ -598,7 +598,7 @@ footer {
     #lang-edit {
         opacity: 0;
     }
-	#container {
+	/* #container {
 		margin: 0;
 		border: initial;
 		border-radius: initial;
@@ -609,11 +609,11 @@ footer {
 		box-shadow: initial;
 		background: initial;
 		page-break-after: always;
-	}
+	} */
 	
 	footer {
-		position: absolute;
-		bottom: 10px;
+		/* position: absolute; */
+		/* bottom: 10px; */
 	}
 	
 }
