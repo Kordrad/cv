@@ -388,8 +388,7 @@ section aside {
 #education .education-table {
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 75px 1fr;
-	    grid-template-columns: 75px 1fr;
+	grid-template-columns: 75px 1fr;
 	grid-template-areas:
 		"date title"
 		"date description";
@@ -425,9 +424,7 @@ section aside {
 #project .project-table {
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 100px 1fr;
-	    grid-template-columns: 100px 1fr;
-/*	grid-auto-rows: 100pxfr 1fr;*/
+	grid-template-columns: 125px 1fr;
 	grid-template-areas:
 		"name link"
 		"date description";
@@ -482,8 +479,7 @@ footer {
 
 @media (min-width:560px) {
 	#container {
-		-ms-grid-columns: 215px 1fr;
-		    grid-template-columns: 215px 1fr;
+		grid-template-columns: 250px 1fr;
 
 	}
 	#left-site,
@@ -537,7 +533,7 @@ footer {
 
 
 	#left-site section aside {
-		margin: 10px 22.5px;
+		margin: 10px 25px;
 	}
 
 	#project .project-table .project-link{
