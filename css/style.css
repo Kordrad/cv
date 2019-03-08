@@ -446,7 +446,7 @@ section aside {
 }
 #project .project-table .project-data {
 	grid-area: date;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 1.2rem;
 }
 #project .project-table .project-link{
