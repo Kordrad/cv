@@ -7,7 +7,8 @@
 
 
 :root {
-	--left-site-bgColor: #2F3A40;
+	--left-site-bgColor: #3d3e43;
+	/*--left-site-bgColor: #2F3A40;*/
 	--right-site-bgColor: #ffffff;
 	--text-color: black;
 	--left-site-fontColor: white;
@@ -15,7 +16,7 @@
 
 
 	/* arrows */
-	--h2-contact: #e37979;
+	--h2-contact: #e35649;
 	--h2-languages: #92e580;
 	--h2-hobbies: #ed9250;
     --h2-personality: #5fc4e3;
@@ -41,7 +42,7 @@ html {
 }
 
 body {
-	background: rgb(204, 204, 204);
+	background: rgb(155, 155, 155);
 /*	overflow-x: hidden;*/
 }
 
@@ -53,8 +54,8 @@ body {
 	display: grid;
 	-ms-grid-columns: 1fr;
 	    grid-template-columns: 1fr;
-	-webkit-box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.75);
 	margin: 0 auto;
 }
 
@@ -63,12 +64,12 @@ body {
 	/*	display: grid;*/
 	color: var(--left-site-fontColor);
 	z-index: 1;
-	-webkit-box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.75);
+	box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.75);
 }
 
 #right-site {
-	padding-top: 75px;
+	padding-top: 50px;
 	background-color: var(--right-site-bgColor);
 	padding-left: 20px;
 	padding-right: 20px;
@@ -116,11 +117,12 @@ a {
 
 /* SECTIONS */
 
-section {
-	margin-bottom: 25px;
-
+#left-site section {
+	margin-bottom: 30px;
 }
-
+#right-site section {
+	margin-bottom: 25px;
+}
 section h2 {
 	color: var(--left-site-fontColor);
 	font-weight: 600;
@@ -131,8 +133,7 @@ section h2 {
 }
 
 section aside {
-	margin: 5px 40px;
-	font-size: 11px;
+	margin: 5px 25px;
 	font-size: 1rem;
 }
 
@@ -151,7 +152,7 @@ section aside {
 
 
 #left-site section h2 {
-/*	box-shadow: 0px 5px 14px 3px rgba(0, 0, 0, 0.5);*/
+/*	box-shadow: 0 5px 14px 3px rgba(0, 0, 0, 0.5);*/
 	cursor: pointer;
 	-webkit-transition: 1s ease;
 	transition: 1s ease;
@@ -165,7 +166,6 @@ section aside {
 #right-site p {
 	opacity: var(--second-text-color);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=NaN)";
-	font-size: 9.9px;
 	font-size: 0.9rem;
 }
 
@@ -183,6 +183,11 @@ section aside {
 #img img {
 	width: 50%;
 	border-radius: 50%;
+}
+
+#img h2 {
+	font-size: 2rem;
+	padding: 35px 0;
 }
 
 
@@ -228,7 +233,6 @@ section aside {
 
 
 #languages ul li {
-	font-size: 13.2px;
 	font-size: 1.2rem;
 }
 
@@ -296,8 +300,7 @@ section aside {
 
 /*media*/
 #media aside{
-	font-size: 16.5px;
-	font-size: 1.5rem;
+	/*font-size: 1.5rem;*/
 }
 #media ul{
 	list-style: none;
@@ -325,14 +328,14 @@ section aside {
 
 /*Right site*/
 #right-site #lang-edit{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     float: right;
 /*    margin-bottom: 30px;*/
     position: absolute;
     right: 40px;
 	top: 40px;
-	
+
 }
 #right-site #lang-edit a{
 	/* background-color: aqua; */
@@ -341,23 +344,19 @@ section aside {
 	cursor: pointer;
 }
 #right-site label {
-	font-size: 22px;
 	font-size: 2rem;
 }
 
 #right-site p#about-me {
-	font-size: 12.1px;
 	font-size: 1.1rem;
 }
 
 #right-site h1 {
-	font-size: 38.5px;
 	font-size: 3.5rem;
 /*	padding-top: 25px;*/
 }
 
 #right-site h3 {
-	font-size: 20.9px;
 	font-size: 1.9rem;
 }
 
@@ -374,7 +373,6 @@ section aside {
 
 #achievements b,
 #education b {
-	font-size: 13.2px;
 	font-size: 1.2rem;
 
 }
@@ -392,8 +390,8 @@ section aside {
 	display: grid;
 	-ms-grid-columns: 75px 1fr;
 	    grid-template-columns: 75px 1fr;
-	grid-template-areas: 
-		"date title" 
+	grid-template-areas:
+		"date title"
 		"date description";
 	margin-bottom: 10px;
 }
@@ -401,7 +399,7 @@ section aside {
 #education aside .education-table .date {
 	grid-area: date;
 	font-weight: 600;
-	font-size: 13.2px;
+
 	font-size: 1.2rem;
 
 }
@@ -430,8 +428,8 @@ section aside {
 	-ms-grid-columns: 100px 1fr;
 	    grid-template-columns: 100px 1fr;
 /*	grid-auto-rows: 100pxfr 1fr;*/
-	grid-template-areas: 
-		"name link" 
+	grid-template-areas:
+		"name link"
 		"date description";
 	margin-bottom: 10px;
 }
@@ -447,19 +445,16 @@ section aside {
 #project .project-table .project-name{
 	grid-area: name;
 	font-weight: 600;
-	font-size: 13.2px;
 	font-size: 1.2rem;
 }
 #project .project-table .project-data {
 	grid-area: date;
 	font-weight: 600;
-	font-size: 13.2px;
 	font-size: 1.2rem;
 }
 #project .project-table .project-link{
 	grid-area: link;
 	font-weight: 600;
-	font-size: 11px;
 	font-size: 1rem;
 }
 #project .project-table .project-description {
@@ -471,13 +466,12 @@ section aside {
 #project .project-table .project-description h5:after{
 	content: "\A";
 	white-space: pre;
-	
+
 }
 
 
 footer {
 	font-style: italic;
-	font-size: 13.2px;
 	font-size: 0.9rem;
 }
 
@@ -498,12 +492,12 @@ footer {
 		min-height: 8.69in;
 	}
 	#left-site {
-		-webkit-box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0);
-		box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0);
+		-webkit-box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0);
+		box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0);
 	}
 	#right-site {
-		-webkit-box-shadow: inset 26px 0px 40px -30px rgba(0, 0, 0, 0.75);
-		box-shadow: inset 26px 0px 40px -30px rgba(0, 0, 0, 0.75);
+		-webkit-box-shadow: inset 26px 0 40px -30px rgba(0, 0, 0, 0.75);
+		box-shadow: inset 26px 0 40px -30px rgba(0, 0, 0, 0.75);
 	}
 
 	#img img {
@@ -513,18 +507,46 @@ footer {
 		margin-top: 5%;
 		margin-bottom: 5%;
 	}
+	#left-site section h2 {
+		width: calc(100% + 2px);
+		z-index: 100 !important;
+		position: relative;
+	}
+	#left-site section h2::before {
+		content: '';
+		width: 0;
+		height: 0;
+		font-size: 0;
+		border-style: solid;
+		border-width: 4px 0 0 4px;
+		border-color: transparent transparent transparent #007bff;
+		position: absolute;
+		right: 0;
+		top: -4px;
+		filter: brightness(.75);
+	}
+
+	#contact h2::before {border-color: transparent transparent transparent var(--h2-contact) !important;}
+	#media h2::before {border-color: transparent transparent transparent var(--h2-media) !important;}
+	#languages h2::before {border-color: transparent transparent transparent var(--h2-languages) !important;}
+	#personality h2::before {border-color: transparent transparent transparent var(--h2-personality) !important;}
+	#hobbies h2::before {border-color: transparent transparent transparent var(--h2-hobbies) !important;}
+
+
+
+
 
 	#left-site section aside {
-		margin: 5px 40px;
+		margin: 10px 22.5px;
 	}
-	
+
 	#project .project-table .project-link{
 	font-size: 1.2rem;
 }
 
 	footer {
 		position: relative;
-		bottom: 0px;
+		bottom: 0;
 		margin: 20px;
 		text-decoration: inherit;
 	}
@@ -551,16 +573,16 @@ footer {
 	}
 
 	#right-site {
-		padding-left: 50px;
-		padding-top: 75px;
+		padding-left: 40px;
+		padding-top: 50px;
 	}
 	#right-site section {
 		margin-top: 20px;
 	}
 
 	#left-site section h2:hover {
-		-webkit-box-shadow: 0px 5px 14px 3px rgba(125, 125, 125, 0.5);
-		box-shadow: 0px 5px 14px 3px rgba(125, 125, 125, 0.5);
+		-webkit-box-shadow: 0 5px 14px 3px rgba(125, 125, 125, 0.5);
+		box-shadow: 0 5px 14px 3px rgba(125, 125, 125, 0.5);
 		cursor: pointer;
 	}
 
@@ -572,9 +594,9 @@ footer {
 	footer {
 		position: absolute;
 	}
-	
+
 	#media aside {
-		font-size: 1.5rem;
+		/*font-size: 1.5rem;*/
 	}
 }
 
@@ -591,10 +613,17 @@ footer {
 @media print {
 	html,
 	body {
-		width: 8.3in;
-		height: 11.7in;
+		width: 8.3in !important;
+		height: 11.7in !important;
 	}
-    
+	#left-site, #right-site {
+		height: 11.7in !important;
+	}
+	* {
+		box-shadow: 0 0 0 0 rgba(0,0,0,0) !important;
+		text-shadow: 0 0 0 0 rgba(0,0,0,0) !important;;
+	}
+
     #lang-edit {
         opacity: 0;
     }
@@ -610,10 +639,10 @@ footer {
 		background: initial;
 		page-break-after: always;
 	} */
-	
+
 	footer {
-		/* position: absolute; */
-		/* bottom: 10px; */
+		 position: absolute;
+		 bottom: 10px;
 	}
-	
+
 }
