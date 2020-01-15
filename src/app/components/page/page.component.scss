@@ -1,0 +1,56 @@
+header  {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-areas: 'img name' 'description description';
+  text-transform: uppercase;
+  /*  & > * {
+      $margin: 10px;
+      margin-left: $margin;
+      margin-right: $margin;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }*/
+
+  img {
+    max-width: 100%;
+    border: 1px solid #5c5d5b;
+    grid-area: img;
+  }
+
+  div {
+    grid-area: name;
+    margin: auto;
+
+    h4 {
+      font-weight: normal;
+      border-bottom: 1px solid #202223;
+      text-align: center;
+      font-size: 1.75rem;
+      margin: 0;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  p {
+    grid-area: description;
+  }
+
+
+}
+
+section#content {
+  border-top: 1px solid #202223;
+}

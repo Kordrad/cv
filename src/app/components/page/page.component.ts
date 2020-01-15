@@ -8,10 +8,17 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./page.component.scss']
 })
 export class PageComponent implements OnInit {
+  contacts: object[];
 
   constructor(
     private route: ActivatedRoute,
     public translate: TranslateService) {
+
+    translate.get('contact.child').subscribe((res: []) => {
+      this.contacts = res;
+      console.log(res);
+      // => 'hello world'
+    });
   }
 
   ngOnInit() {

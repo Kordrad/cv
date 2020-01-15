@@ -13,7 +13,19 @@ $theme: (
   ),
   'body:before':(
     background-color: $theme-body-light,
-    border: #5c5d5b
+    border: $theme-body-border
+  ),
+  '.container':(
+    background-color: $theme-body-dark
+  ),
+  '.container:before':(
+    background-color: $theme-body-border
+  ),
+  '.container:after':(
+    background-color: $theme-body-border
+  ),
+  '.container .content': (
+    background-color: $theme-body-light
   )
 );
 

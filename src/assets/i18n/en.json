@@ -1,3 +1,24 @@
 {
-  "langTest": "En version lang test"
+  "firstName": "Konrad",
+  "lastName": "Stepien",
+  "position": "Front end - Angular web developer",
+  "contact": {
+    "title": "Contact",
+    "child": [
+      {
+        "title": "+48 737 476 569",
+        "link": "tel:+48737476569",
+        "icon": "phone"
+      },
+      {
+        "title": "LinkedIn",
+        "link": "https://www.linkedin.com/in/kordrad/",
+        "icon": "linkedin"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/Kordrad"
+      }
+    ]
+  }
 }

@@ -1,1 +1,29 @@
 <!--<span>{{'langTest' | translate}}</span>-->
+<header>
+  <img src="./assets/img/user.jpg" alt="User"/>
+
+  <div>
+    <h4>
+      {{'firstName' | translate}}
+      <span>{{'lastName' | translate}}</span>
+    </h4>
+
+  </div>
+  <p>
+    {{'position' | translate}}
+  </p>
+</header>
+
+<section id="content">
+  <aside>
+    <section id="contact">
+      <h4>{{'contact.title' | translate}}</h4>
+      <ul>
+        <li *ngFor="let contact of contacts"><a [href]="contact.link">{{ contact.title | translate}}</a></li>
+      </ul>
+    </section>
+  </aside>
+  <main>
+
+  </main>
+</section>
