@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
 import { IconService } from '@ant-design/icons-angular';
-import { MailFill, LinkedinFill, GithubFill } from '@ant-design/icons-angular/icons'
+import { MailFill, LinkedinFill, GithubFill } from '@ant-design/icons-angular/icons';
 
 @Component({
   selector: 'app-page',

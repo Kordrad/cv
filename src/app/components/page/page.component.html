@@ -3,10 +3,7 @@
   <img src="./assets/img/user.jpg" alt="User"/>
 
   <div>
-    <h1>
-      {{'firstName' | translate}}
-      <span>{{'lastName' | translate}}</span>
-    </h1>
+    <h1 [innerHTML]="'name' | translate | bold"></h1>
 
   </div>
   <h2>

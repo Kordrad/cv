@@ -10,6 +10,7 @@ import { IconModule } from '@ant-design/icons-angular';
 
 
 import {PageComponent} from './components/page/page.component';
+import { BoldPipe } from './pipe/bold.pipe';
 
 
 // AoT requires an exported function for factories
@@ -20,7 +21,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    PageComponent
+    PageComponent,
+    BoldPipe
   ],
   imports: [
     BrowserModule,
