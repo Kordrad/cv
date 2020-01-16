@@ -20,5 +20,22 @@
         "icon": "github"
       }
     ]
+  },
+  "languages": {
+    "title": "Languages",
+    "child": [
+      {
+        "language": "Polish",
+        "level": "Native"
+      },
+      {
+        "language": "English",
+        "level": "B2"
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "Hobbies",
+    "child": ["New technology", "programming", "video games", "logic games"]
   }
 }

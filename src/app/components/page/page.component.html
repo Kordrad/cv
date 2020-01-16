@@ -21,6 +21,20 @@
           <a [href]="contact.link" target="_blank">{{ contact.title | translate}}</a></li>
       </ul>
     </section>
+
+    <section id="languages">
+      <h3>{{'languages.title' | translate}}</h3>
+      <ul>
+        <li *ngFor="let language of languages">
+          {{language.language}} <span>{{language.level}}</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="hobbies">
+      <h3>{{'hobbies.title' | translate}}</h3>
+      <p>{{'hobbies.child' | translate | join: ', ' }}</p>
+    </section>
   </aside>
   <main>
 

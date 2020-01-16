@@ -49,6 +49,7 @@ header {
     //font-weight: normal;
     font-size: 1rem;
     grid-area: description;
+    margin-bottom: 25px;
   }
 
 
@@ -65,11 +66,22 @@ section#content {
 
     ul {
       list-style: none;
-      padding-left: 0;
+      padding: 0;
+      margin-left: 15px;
 
+      li:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+    }
+
+    section:not(:first-of-type) {
+      border-top: 2px solid #4d4f50;
+      margin-top: 50px;
+    }
+
+    section#contact ul {
       li {
         $icon-size: 1.5rem;
-        margin-bottom: 15px;
         display: grid;
         grid-template-columns: $icon-size 1fr;
         grid-template-areas: 'icon any';
@@ -90,5 +102,16 @@ section#content {
         }
       }
     }
+
+    section#languages {
+      ul {
+        list-style: circle;
+        margin-left: 36px;
+        li span {
+          opacity: .65;
+        }
+      }
+    }
+
   }
 }

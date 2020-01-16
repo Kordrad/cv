@@ -12,6 +12,7 @@ import { MailFill, LinkedinFill, GithubFill } from '@ant-design/icons-angular/ic
 
 export class PageComponent implements OnInit {
   contacts: object[];
+  languages: object[];
 
   constructor(
     private route: ActivatedRoute,
@@ -21,6 +22,10 @@ export class PageComponent implements OnInit {
 
     translate.get('contact.child').subscribe((res: []) => {
       this.contacts = res;
+    });
+
+    translate.get('languages.child').subscribe((res: []) => {
+      this.languages = res;
     });
   }
 
