@@ -6,18 +6,19 @@
     "title": "Contacts",
     "child": [
       {
-        "title": "+48 737 476 569",
-        "link": "tel:+48737476569",
-        "icon": "phone"
+        "title": "kord.stp@gmail.com",
+        "link": "mailto:kord.stp@gmail.com",
+        "icon": "mail"
       },
       {
-        "title": "LinkedIn",
+        "title": "LinkedIn.com/in/Kordrad",
         "link": "https://www.linkedin.com/in/kordrad/",
         "icon": "linkedin"
       },
       {
-        "title": "GitHub",
-        "link": "https://github.com/Kordrad"
+        "title": "GitHub.com/Kordrad",
+        "link": "https://github.com/Kordrad",
+        "icon": "github"
       }
     ]
   }

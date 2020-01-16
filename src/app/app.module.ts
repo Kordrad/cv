@@ -6,6 +6,9 @@ import {AppComponent} from './app.component';
 
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { IconModule } from '@ant-design/icons-angular';
+
+
 import {PageComponent} from './components/page/page.component';
 
 
@@ -29,7 +32,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    IconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

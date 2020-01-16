@@ -19,7 +19,9 @@
     <section id="contact">
       <h3>{{'contact.title' | translate}}</h3>
       <ul>
-        <li *ngFor="let contact of contacts"><a [href]="contact.link" target="_blank">{{ contact.title | translate}}</a></li>
+        <li *ngFor="let contact of contacts">
+          <i antIcon [type]="contact.icon" theme="fill"></i>
+          <a [href]="contact.link" target="_blank">{{ contact.title | translate}}</a></li>
       </ul>
     </section>
   </aside>
