@@ -1,4 +1,4 @@
-header  {
+header {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -31,12 +31,13 @@ header  {
     grid-area: name;
     margin: auto;
 
-    h4 {
+    h1 {
       font-weight: normal;
-      border-bottom: 1px solid #202223;
+      border-bottom: 2px solid #4d4f50;
       text-align: center;
       font-size: 1.75rem;
       margin: 0;
+      padding-bottom: 4px;
 
       span {
         font-weight: bold;
@@ -44,7 +45,9 @@ header  {
     }
   }
 
-  p {
+  h2 {
+    //font-weight: normal;
+    font-size: 1rem;
     grid-area: description;
   }
 
@@ -52,5 +55,33 @@ header  {
 }
 
 section#content {
-  border-top: 1px solid #202223;
+  border-top: 2px solid #4d4f50;
+
+  aside {
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 15px;
+        display: grid;
+        grid-template-columns: 35px 1fr;
+        grid-template-areas: 'icon any';
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        i {
+          grid-area: icon;
+        }
+
+        & > * {
+          grid-area: any;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

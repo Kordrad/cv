@@ -3,23 +3,23 @@
   <img src="./assets/img/user.jpg" alt="User"/>
 
   <div>
-    <h4>
+    <h1>
       {{'firstName' | translate}}
       <span>{{'lastName' | translate}}</span>
-    </h4>
+    </h1>
 
   </div>
-  <p>
+  <h2>
     {{'position' | translate}}
-  </p>
+  </h2>
 </header>
 
 <section id="content">
   <aside>
     <section id="contact">
-      <h4>{{'contact.title' | translate}}</h4>
+      <h3>{{'contact.title' | translate}}</h3>
       <ul>
-        <li *ngFor="let contact of contacts"><a [href]="contact.link">{{ contact.title | translate}}</a></li>
+        <li *ngFor="let contact of contacts"><a [href]="contact.link" target="_blank">{{ contact.title | translate}}</a></li>
       </ul>
     </section>
   </aside>
