@@ -55,14 +55,27 @@ header {
 
 }
 
+$border: 2px solid #4d4f50;
 section#content {
-  border-top: 2px solid #4d4f50;
+  border-top: $border;
 
-  aside {
+  aside section, main section {
+    margin-bottom: 50px;
+
+    &:not(:first-of-type) {
+      border-top: $border;
+
+    }
+
     h3 {
       text-transform: uppercase;
-      font-weight: bold;
+      font-weight: 400;
+      font-size: 1.2rem;
     }
+  }
+
+  aside {
+
 
     ul {
       list-style: none;
@@ -74,10 +87,6 @@ section#content {
       }
     }
 
-    section:not(:first-of-type) {
-      border-top: 2px solid #4d4f50;
-      margin-top: 50px;
-    }
 
     section#contact ul {
       li {
@@ -107,8 +116,56 @@ section#content {
       ul {
         list-style: circle;
         margin-left: 36px;
+
         li span {
           opacity: .65;
+        }
+      }
+    }
+
+  }
+
+  main {
+    border-top: $border;
+    section#experience {
+      ul {
+        list-style: circle;
+        padding-left: 88px;
+        position: relative;
+
+        li {
+          position: relative;
+          span {
+            position: absolute;
+            left: -90px;
+            text-align: center;
+            display: block;
+            width: 66px;
+
+            &.start {
+              bottom: 0;
+            }
+          }
+
+          &::before {
+            content: '';
+            border-left: $border;
+            height: calc(100% + 15px);
+            position: absolute;
+            bottom: -29px;
+            left: -14px;
+          }
+
+          &:last-of-type {
+            &::before {
+
+              height: calc(100% - 13px);
+              bottom: 0;
+
+            }
+          }
+
+          //padding-left: 15px;
         }
       }
     }

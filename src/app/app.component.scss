@@ -1,9 +1,9 @@
 .container {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-
   $space: 5px;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  padding: $space 0;
 
   &:before, &:after {
     content: '';
@@ -24,12 +24,14 @@
 
   .content {
     z-index: 1;
-    height: calc(100% - 10px);
+    position: relative;
+    margin: auto;
+    //height: calc(100% - 10px);
     width: calc(100% - 10px);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    //position: absolute;
+    //left: 50%;
+    //top: 50%;
+    //transform: translate(-50%, -50%);
     border: 1px solid #5c5d5b;
     padding: 39px;
     box-sizing: border-box;

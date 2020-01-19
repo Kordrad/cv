@@ -5,6 +5,11 @@
     "title": "Contacts",
     "child": [
       {
+        "title": "(+48) 737 476 569",
+        "link": "tel:+48737476569",
+        "icon": "phone"
+      },
+      {
         "title": "kord.stp@gmail.com",
         "link": "mailto:kord.stp@gmail.com",
         "icon": "mail"
@@ -36,6 +41,43 @@
   },
   "hobbies": {
     "title": "Hobbies",
-    "child": ["New technology", "programming", "video games", "logic games"]
+    "child": [
+      "New technology",
+      "programming",
+      "video games",
+      "logic games"
+    ]
+  },
+  "experience": {
+    "title": "Work Experience",
+    "child": [
+      [
+        {
+          "date": [
+            "2018.10",
+            "2019.03"
+          ],
+          "title": "Afisz Media SP. Z O.O. - Website designer",
+          "description": "Graphic design of templates for websites. Creating a template based on graphics created in Photoshop Website and CMS panel installation for client hosting. Creating and editing graphics."
+        }
+      ],
+      [
+        {
+          "date": [
+            "2019.06",
+            "2019.11"
+          ],
+          "title": "MDBootstrap - Junior React Developer",
+          "description": "Graphic design of templates for websites. Creating a template based on graphics created in Photoshop Website and CMS panel installation for client hosting. Creating and editing graphics."
+        },
+        {
+          "date": [
+            "Until now"
+          ],
+          "title": "MDBootstrap - Junior Angular Developer",
+          "description": "jfdlks;ajflks;"
+        }
+      ]
+    ]
   }
 }

@@ -37,6 +37,17 @@
     </section>
   </aside>
   <main>
+    <section id="experience">
+      <h3 [innerHTML]="'experience.title' | translate | bold"></h3>
+      <ul *ngFor="let jobs of experience">
+        <li *ngFor="let job of jobs">
+          <span class="end">{{job.date[1] ? job.date[1] : job.date[0]}}</span>
+          <span class="start" *ngIf="job.date[1]">{{job.date[0]}}</span>
+          <h4>{{job.title}}</h4>
+          <p *ngIf="job.description">{{job.description}}</p>
+        </li>
+      </ul>
 
+    </section>
   </main>
 </section>
