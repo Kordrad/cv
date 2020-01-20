@@ -22,6 +22,16 @@
       </ul>
     </section>
 
+    <section id="skills">
+      <h3>{{'skills.title' | translate}}</h3>
+      <ul>
+        <li *ngFor="let skill of skills">
+          <h4>{{skill.level}}</h4>
+          <p> {{skill.name.sort() | join: ', '}} </p>
+        </li>
+      </ul>
+    </section>
+
     <section id="languages">
       <h3>{{'languages.title' | translate}}</h3>
       <ul>
@@ -37,6 +47,10 @@
     </section>
   </aside>
   <main>
+    <section id="objective">
+      <h3 [innerHTML]="'objective.title' | translate | bold"></h3>
+      <p>{{'objective.description' | translate}}</p>
+    </section>
     <section id="experience">
       <h3 [innerHTML]="'experience.title' | translate | bold"></h3>
       <ul *ngFor="let jobs of experience">
@@ -44,10 +58,9 @@
           <span class="end">{{job.date[1] ? job.date[1] : job.date[0]}}</span>
           <span class="start" *ngIf="job.date[1]">{{job.date[0]}}</span>
           <h4>{{job.title}}</h4>
-          <p *ngIf="job.description">{{job.description}}</p>
+          <p *ngIf="job.description" [innerHTML]="job.description"></p>
         </li>
       </ul>
-
     </section>
   </main>
 </section>

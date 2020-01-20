@@ -22,6 +22,7 @@ export class PageComponent implements OnInit {
   contacts: object[];
   languages: object[];
   experience: object[];
+  skills: object[];
 
   constructor(
     private route: ActivatedRoute,
@@ -43,13 +44,10 @@ export class PageComponent implements OnInit {
         .map((job: []) => job.sort(((jobPositionA: Job, jobPositionB: Job) => {
           let dateA = new Date(jobPositionA.date[0]).getTime();
           let dateB = new Date(jobPositionB.date[0]).getTime();
-          if (isNaN(dateA)) {
-            dateA = new Date().getTime();
-          }
+
           dateA = isNaN(dateA) ? new Date().getTime() : dateA;
           dateB = isNaN(dateB) ? new Date().getTime() : dateB;
 
-          console.log(dateA, dateB);
           return dateB - dateA;
         })))
 
@@ -59,11 +57,13 @@ export class PageComponent implements OnInit {
 
           dateJob1 = isNaN(dateJob1) ? new Date().getTime() : dateJob1;
           dateJob2 = isNaN(dateJob2) ? new Date().getTime() : dateJob2;
-          console.log(dateJob1, dateJob2);
+
           return dateJob2 - dateJob1;
         });
+    });
 
-      console.log(this.experience);
+    translate.get('skills.child').subscribe((res: []) => {
+      this.skills = res;
     });
   }
 

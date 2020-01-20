@@ -1,6 +1,10 @@
 {
   "name": "Konrad Stepien",
   "position": "Front end - Angular web developer",
+  "objective": {
+    "title": "Career Objective",
+    "description": "Looking for a position as Angular Front-End developer where I can exercise my skill and experience to prosper with the company."
+  },
   "contact": {
     "title": "Contacts",
     "child": [
@@ -68,16 +72,86 @@
             "2019.11"
           ],
           "title": "MDBootstrap - Junior React Developer",
-          "description": "Graphic design of templates for websites. Creating a template based on graphics created in Photoshop Website and CMS panel installation for client hosting. Creating and editing graphics."
+          "description": "Creating components for the mentioned technology. Customer support. <p>Work in technologies: React.js, TypeScript, Git, NodeJs, HTML, CSS, Unit Tests</p> <p>Familiarity with: React Native, Gulp, Express</p>"
         },
         {
           "date": [
             "Until now"
           ],
           "title": "MDBootstrap - Junior Angular Developer",
-          "description": "jfdlks;ajflks;"
+          "description": "Creating components for the mentioned technology. Customer support. <p>Work in technologies: Angular 8, Git, HTML, SCSS, TypeScript</p>"
         }
       ]
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "child": [
+      {
+        "level": "Commercial experience",
+        "name": [
+          "Angular 8",
+          "React.js",
+          "Typescript",
+          "JavaScript",
+          "Node.js",
+          "Scss + Css",
+          "jQuery",
+          "Git",
+          "RWD",
+          "Unit tests"
+        ]
+      },
+      {
+        "level": "Additional knowledge about",
+        "name": [
+          "Vue.js",
+          "MySql",
+          "Firebase",
+          "NoSql",
+          "Less",
+          "SEO",
+          "PHP",
+          "WordPress",
+          "React Native",
+          "Express",
+          "Next"
+        ]
+      },
+      {
+        "level": "Programs and Systems",
+        "name": [
+          "Adobe Photoshop",
+          "Adobe XD",
+          "Windows",
+          "Linux",
+          "WebStorm",
+          "VSCode"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Work Experience",
+    "child": [
+      {
+        "date": [
+          "2019.02",
+          "2019.03"
+        ],
+        "title": "Bakery Fantazja",
+        "link": {
+          "title": "www.cukiernia-fantazja.pl",
+          "to": "www.cukiernia-fantazja.pl"
+        },
+        "technology": [
+          "VUE.JS",
+          "SCSS",
+          "HTML",
+          "PHOTOSHOP"
+        ],
+        "description": "Graphic design of templates for websites. Creating a template based on graphics created in Photoshop Website and CMS panel installation for client hosting. Creating and editing graphics."
+      }
     ]
   }
 }
