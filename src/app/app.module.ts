@@ -12,6 +12,7 @@ import { IconModule } from '@ant-design/icons-angular';
 import {PageComponent} from './components/page/page.component';
 import { BoldPipe } from './pipe/bold.pipe';
 import { JoinPipe } from './pipe/join.pipe';
+import { ControlMenuComponent } from './components/control-menu/control-menu.component';
 
 
 // AoT requires an exported function for factories
@@ -25,6 +26,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PageComponent,
     BoldPipe,
     JoinPipe,
+    ControlMenuComponent,
   ],
   imports: [
     BrowserModule,

@@ -17,7 +17,6 @@ export class JoinPipe implements PipeTransform {
     if (Array.isArray(value)) {
       value = value.join(separator);
     }
-    console.log(value);
     return value;
   }
 

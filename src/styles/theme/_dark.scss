@@ -1,11 +1,13 @@
 @import "../abstracts/variables";
 @import "../abstracts/functions";
 
-$theme-color-primary: $theme-white;
-$theme-color-secondary: #e0e1de;
-$theme-color-dark: #4d4f50;
+$theme-color-primary: $theme-dark;
+//$theme-color-primary: #202223;
+$theme-color-secondary: #4d4f50;
+$theme-color-dark:  #e0e1de;
 $theme-border: 2px solid $theme-color-dark;
-$theme-font-color: #202223;
+$theme-font-color: #eeeeee;
+
 
 $theme: (
   body: (
@@ -52,4 +54,4 @@ $theme: (
 );
 
 
-@include theme('', $theme)
+@include theme('.dark', $theme)

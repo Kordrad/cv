@@ -23,6 +23,7 @@ export class PageComponent implements OnInit {
   languages: object[];
   experience: object[];
   skills: object[];
+  projects: object[];
 
   constructor(
     private route: ActivatedRoute,
@@ -64,6 +65,10 @@ export class PageComponent implements OnInit {
 
     translate.get('skills.child').subscribe((res: []) => {
       this.skills = res;
+    });
+
+    translate.get('projects.child').subscribe((res: []) => {
+      this.projects = res;
     });
   }
 

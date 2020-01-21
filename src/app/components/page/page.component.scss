@@ -1,3 +1,4 @@
+$border: 2px solid;
 header {
   margin: 0;
   display: grid;
@@ -6,20 +7,6 @@ header {
   grid-template-rows: auto;
   grid-template-areas: 'img name' 'description description';
   text-transform: uppercase;
-  /*  & > * {
-      $margin: 10px;
-      margin-left: $margin;
-      margin-right: $margin;
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-    }*/
 
   img {
     max-width: 100%;
@@ -33,7 +20,7 @@ header {
 
     h1 {
       font-weight: normal;
-      border-bottom: 2px solid #4d4f50;
+      //border-bottom: $border;
       text-align: center;
       font-size: 1.75rem;
       margin: 0;
@@ -55,17 +42,12 @@ header {
 
 }
 
-$border: 2px solid #4d4f50;
+
 section#content {
-  border-top: $border;
+  //border-top: $border;
 
   aside section, main section {
     margin-bottom: 50px;
-
-    &:not(:first-of-type) {
-      border-top: $border;
-
-    }
 
     h3 {
       text-transform: uppercase;
@@ -126,7 +108,8 @@ section#content {
   }
 
   main {
-    border-top: $border;
+    //border-top: $border;
+
     section#experience {
       ul {
         list-style: circle;
@@ -135,6 +118,7 @@ section#content {
 
         li {
           position: relative;
+
           span {
             position: absolute;
             left: -90px;
@@ -149,17 +133,17 @@ section#content {
 
           &::before {
             content: '';
-            border-left: $border;
-            height: calc(100% + 15px);
+            //border-left: $border;
+            height: calc(100% + 14px);
             position: absolute;
-            bottom: -29px;
+            bottom: -26px;
             left: -14px;
           }
 
           &:last-of-type {
             &::before {
 
-              height: calc(100% - 13px);
+              height: calc(100% - 12px);
               bottom: 0;
 
             }
@@ -170,5 +154,57 @@ section#content {
       }
     }
 
+    section#projects {
+      aside div {
+        display: grid;
+        grid-template:
+          'title'
+          'link'
+          'details'
+          'description'
+          'project-link';
+        grid-gap: 10px;
+
+        h5 {
+          grid-area: title;
+          font-size: 1rem;
+          text-transform: uppercase;
+          margin: 0;
+        }
+
+        a {
+          grid-area: link;
+          font-weight: bold;
+          font-size: 0.9rem;
+          text-decoration: none;
+        }
+        b {
+          grid-area: details;
+          font-size: 0.75rem;
+          opacity: 0.5;
+        }
+        p {
+          grid-area: description;
+          margin: 0;
+        }
+        small {
+          grid-area: project-link;
+          a {
+            font-weight: normal;
+          }
+        }
+      }
+    }
   }
+}
+
+app-control-menu {
+  position: fixed;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  //border: 1px solid black;
+  box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
+  padding: 0;
+  margin: 0;
 }

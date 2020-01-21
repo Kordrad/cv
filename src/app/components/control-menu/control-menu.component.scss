@@ -1,0 +1,26 @@
+@import "../../../styles/abstracts/variables";
+
+div {
+  padding: 14px;
+  display: flex;
+  align-items: center;
+
+  #toggle {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+  }
+  * {
+    margin: 0 10px
+  }
+
+  button {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+
+    &.white {background-color: $theme-white;}
+    &.dark {background-color: $theme-dark;}
+
+  }
+}

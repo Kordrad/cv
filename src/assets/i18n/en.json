@@ -132,25 +132,24 @@
     ]
   },
   "projects": {
-    "title": "Work Experience",
+    "title": "My projects",
     "child": [
       {
-        "date": [
-          "2019.02",
-          "2019.03"
-        ],
         "title": "Bakery Fantazja",
         "link": {
           "title": "www.cukiernia-fantazja.pl",
-          "to": "www.cukiernia-fantazja.pl"
+          "to": "www.cukiernia-fantazja.pl",
+          "gitTitle": "Github: github.com/Kordrad/bakery-fantazja",
+          "gitTo": "https://github.com/Kordrad/bakery-fantazja"
         },
-        "technology": [
+        "details": [
           "VUE.JS",
           "SCSS",
           "HTML",
           "PHOTOSHOP"
         ],
-        "description": "Graphic design of templates for websites. Creating a template based on graphics created in Photoshop Website and CMS panel installation for client hosting. Creating and editing graphics."
+        "description": "Project implemented for the Cukiernia Fantazja company."
+
       }
     ]
   }

@@ -62,5 +62,21 @@
         </li>
       </ul>
     </section>
+    <section id="projects">
+      <h3 [innerHTML]="'projects.title' | translate | bold"></h3>
+      <aside>
+        <div class="project" *ngFor="let project of projects">
+          <h5>{{project.title}}</h5>
+          <a [href]="project.link.to">{{project.link.title || project.link.to}}</a>
+          <b>{{project.details.join(', ')}}</b>
+          <p>
+            {{project.description}}
+          </p>
+          <small><a [href]="project.link['gitTo']">{{project.link['gitTitle']}}</a></small>
+        </div>
+      </aside>
+    </section>
   </main>
 </section>
+
+<app-control-menu></app-control-menu>
