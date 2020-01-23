@@ -1,6 +1,22 @@
-<div class="control-menu">
-  <div id="toggle"></div>
-  <span>Theme selector: </span>
-  <button class="white" (click)="setTheme('')"></button>
-  <button class="dark" (click)="setTheme('dark')"></button>
-</div>
+<section class="control-menu">
+  <div>
+    <span>Theme selector: </span>
+    <button class="white" (click)="setTheme('')"></button>
+    <button class="dark" (click)="setTheme('dark')"></button>
+  </div>
+  <div class="lang">
+    <img
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCAz%0D%0AMCI+CjxjbGlwUGF0aCBpZD0idCI+CjxwYXRoIGQ9Ik0zMCwxNSBoMzAgdjE1IHogdjE1IGgtMzAg%0D%0AeiBoLTMwIHYtMTUgeiB2LTE1IGgzMCB6Ii8+CjwvY2xpcFBhdGg+CjxwYXRoIGQ9Ik0wLDAgdjMw%0D%0AIGg2MCB2LTMwIHoiIGZpbGw9IiMwMDI0N2QiLz4KPHBhdGggZD0iTTAsMCBMNjAsMzAgTTYwLDAg%0D%0ATDAsMzAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI2Ii8+CjxwYXRoIGQ9Ik0wLDAgTDYw%0D%0ALDMwIE02MCwwIEwwLDMwIiBjbGlwLXBhdGg9InVybCgjdCkiIHN0cm9rZT0iI2NmMTQyYiIgc3Ry%0D%0Ab2tlLXdpZHRoPSI0Ii8+CjxwYXRoIGQ9Ik0zMCwwIHYzMCBNMCwxNSBoNjAiIHN0cm9rZT0iI2Zm%0D%0AZiIgc3Ryb2tlLXdpZHRoPSIxMCIvPgo8cGF0aCBkPSJNMzAsMCB2MzAgTTAsMTUgaDYwIiBzdHJv%0D%0Aa2U9IiNjZjE0MmIiIHN0cm9rZS13aWR0aD0iNiIvPgo8L3N2Zz4K"
+      alt="EN"
+      routerLink="/en"
+      (click)="changeLang('en')"
+    />
+    <img
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJGbGFnIG9mIFBvbGFu%0D%0AZCIgdmlld0JveD0iMCAwIDE2IDEwIj4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjEwIiBmaWxs%0D%0APSIjZmZmIi8+CjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSI1IiBmaWxsPSIjZGMxNDNjIiB5PSI1%0D%0AIi8+Cjwvc3ZnPgo="
+      alt="PL"
+      routerLink="/pl"
+      (click)="changeLang('pl')"
+    />
+  </div>
+</section>
+<ng-content></ng-content>

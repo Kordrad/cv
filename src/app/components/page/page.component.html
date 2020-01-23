@@ -79,4 +79,8 @@
   </main>
 </section>
 
-<app-control-menu></app-control-menu>
+<app-control-menu [ngClass]="activeMenu ? 'active' : ''">
+  <button id="toggle" (click)="toggleMenu()">
+    <i antIcon [type]="'caret-up'" theme="fill"></i>
+  </button>
+</app-control-menu>

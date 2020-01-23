@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-control-menu',
@@ -7,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ControlMenuComponent implements OnInit {
 
-  constructor() {
+  constructor(public translate: TranslateService) {
   }
 
   ngOnInit() {
@@ -15,5 +16,9 @@ export class ControlMenuComponent implements OnInit {
 
   setTheme = (theme: string) => {
     document.body.className = theme;
+  }
+
+  changeLang = (lang: string) => {
+    this.translate.use(lang);
   }
 }

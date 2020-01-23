@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
 import {IconService} from '@ant-design/icons-angular';
-import {PhoneFill, MailFill, LinkedinFill, GithubFill} from '@ant-design/icons-angular/icons';
+import {PhoneFill, MailFill, LinkedinFill, GithubFill, CaretUpFill} from '@ant-design/icons-angular/icons';
 
 // tslint:disable-next-line:class-name
 interface Job {
@@ -19,6 +19,7 @@ interface Job {
 
 
 export class PageComponent implements OnInit {
+  activeMenu = false;
   contacts: object[];
   languages: object[];
   experience: object[];
@@ -29,7 +30,7 @@ export class PageComponent implements OnInit {
     private route: ActivatedRoute,
     public translate: TranslateService,
     private iconService: IconService) {
-    this.iconService.addIcon(...[PhoneFill, MailFill, LinkedinFill, GithubFill]);
+    this.iconService.addIcon(...[PhoneFill, MailFill, LinkedinFill, GithubFill, CaretUpFill]);
 
     translate.get('contact.child').subscribe((res: []) => {
       this.contacts = res;
@@ -76,4 +77,6 @@ export class PageComponent implements OnInit {
     const lang = this.route.snapshot.paramMap.get('lang');
     this.translate.use(`${lang}`);
   }
+
+  toggleMenu = () => this.activeMenu = !this.activeMenu
 }
