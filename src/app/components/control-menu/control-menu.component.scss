@@ -16,12 +16,12 @@ section {
     height: 25px;
     width: 25px;
 
-    &.white {
+    &.white-theme {
       background-color: $theme-white;
       margin-right: 10px;
     }
 
-    &.dark {
+    &.dark-theme {
       background-color: $theme-dark;
     }
 

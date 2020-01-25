@@ -14,7 +14,7 @@ $theme: (
   ),
   'body:before':(
     background-color: $theme-color-primary,
-    border: $theme-color-dark
+    border: $theme-border
   ),
   '.container':(
     background-color: $theme-color-secondary

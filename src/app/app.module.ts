@@ -13,6 +13,7 @@ import {PageComponent} from './components/page/page.component';
 import { BoldPipe } from './pipe/bold.pipe';
 import { JoinPipe } from './pipe/join.pipe';
 import { ControlMenuComponent } from './components/control-menu/control-menu.component';
+import { SortByDatePipe } from './pipe/sort-by-date.pipe';
 
 
 // AoT requires an exported function for factories
@@ -27,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BoldPipe,
     JoinPipe,
     ControlMenuComponent,
+    SortByDatePipe,
   ],
   imports: [
     BrowserModule,

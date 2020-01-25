@@ -1,3 +1,149 @@
 {
-  "name": "Konrad Stępień"
+  "name": "Konrad Stępień",
+  "position": "Front end - Angular web developer",
+  "objective": {
+    "title": "Cel zawodowy",
+    "description": "Poszukuję stanowiska programisty Angular Front-End, w którym mogę wykorzystać swoje umiejętności i doświadczenie, aby dobrze prosperować w firmie."
+  },
+  "contact": {
+    "title": "Kontakt"
+  },
+  "languages": {
+    "title": "Języki",
+    "child": [
+      {
+        "language": "Polski",
+        "level": "Natywny"
+      },
+      {
+        "language": "Angielski",
+        "level": "B2"
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "Hobby",
+    "child": [
+      "Nowe Technologie",
+      "gry video",
+      "gry logiczne"
+    ]
+  },
+  "experience": {
+    "title": "Doświadczenie zawodowe",
+    "child": [
+      [
+        {
+          "date": [
+            "2018.10",
+            "2019.03"
+          ],
+          "title": "Afisz Media SP. Z O.O. - Website designer",
+          "description": "Projekt graficzny szablonów stron internetowych. Tworzenie szablonu na podstawie grafiki utworzonej w witrynie Photoshop i instalacji panelu CMS na potrzeby hostingu klienta. Tworzenie i edycja grafiki."
+        }
+      ],
+      [
+        {
+          "date": [
+            "2019.06",
+            "2019.11"
+          ],
+          "title": "MDBootstrap - Junior React Developer",
+          "description": "Tworzenie komponentów dla wspomnianej technologii. Obsługa klienta. <p> Praca w technologiach: React.js, TypeScript, Git, NodeJs, HTML, CSS, Testy jednostkowe </p> <p> Zaznajomienie się: React Native, Gulp, Express </p>"
+        },
+        {
+          "date": [
+            "Until now"
+          ],
+          "title": "MDBootstrap - Junior Angular Developer",
+          "description": "Tworzenie komponentów dla wspomnianej technologii. Obsługa klienta. <p> Praca w technologiach: Angular 8, Git, HTML, SCSS, TypeScript </p>"
+        }
+      ]
+    ]
+  },
+  "skills": {
+    "title": "Umiejętności",
+    "child": [
+      {
+        "level": "Doświadczenie komercyjne",
+        "name": [
+          "Angular 8",
+          "React.js",
+          "Typescript",
+          "JavaScript",
+          "Node.js",
+          "Scss + Css",
+          "jQuery",
+          "Git",
+          "RWD",
+          "Unit tests"
+        ]
+      },
+      {
+        "level": "Dodatkowa wiedza na temat",
+        "name": [
+          "Vue.js",
+          "MySql",
+          "Firebase",
+          "NoSql",
+          "Less",
+          "SEO",
+          "PHP",
+          "WordPress",
+          "React Native",
+          "Express",
+          "Next"
+        ]
+      },
+      {
+        "level": "Programy i Systemy",
+        "name": [
+          "Adobe Photoshop",
+          "Adobe XD",
+          "Windows",
+          "Linux",
+          "WebStorm",
+          "VSCode"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Moje Projekty",
+    "child": [
+      {
+        "title": "CV Online",
+        "link": {
+          "title": "kordrad.github.io/cv/",
+          "to": "https://kordrad.github.io/cv/cv-pl.html",
+          "gitTitle": "Github: www.github.com/Kordrad/cv",
+          "gitTo": "https://github.com/Kordrad/cv"
+        },
+        "details": [
+          "Angular 8",
+          "SCSS",
+          "Typescript",
+          "ngx-translate"
+        ],
+        "description": "Curriculum Vitae jako strona internetowa."
+      },
+      {
+        "title": "Cukiernia Fantazja",
+        "link": {
+          "title": "www.cukiernia-fantazja.pl",
+          "to": "www.cukiernia-fantazja.pl",
+          "gitTitle": "Github: github.com/Kordrad/bakery-fantazja",
+          "gitTo": "https://github.com/Kordrad/bakery-fantazja"
+        },
+        "details": [
+          "VUE.JS",
+          "SCSS",
+          "HTML",
+          "PHOTOSHOP"
+        ],
+        "description": "Projekt realizowany dla firmy Cukiernia Fantazja."
+
+      }
+    ]
+  }
 }

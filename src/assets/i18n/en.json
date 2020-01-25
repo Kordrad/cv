@@ -47,7 +47,6 @@
     "title": "Hobbies",
     "child": [
       "New technology",
-      "programming",
       "video games",
       "logic games"
     ]
@@ -135,6 +134,22 @@
     "title": "My projects",
     "child": [
       {
+        "title": "CV Online",
+        "link": {
+          "title": "kordrad.github.io/cv/",
+          "to": "https://kordrad.github.io/cv/cv-pl.html",
+          "gitTitle": "Github: www.github.com/Kordrad/cv",
+          "gitTo": "https://github.com/Kordrad/cv"
+        },
+        "details": [
+          "Angular 8",
+          "SCSS",
+          "Typescript",
+          "ngx-translate"
+        ],
+        "description": "My curriculum vitae as a website."
+      },
+      {
         "title": "Bakery Fantazja",
         "link": {
           "title": "www.cukiernia-fantazja.pl",
@@ -149,7 +164,6 @@
           "PHOTOSHOP"
         ],
         "description": "Project implemented for the Cukiernia Fantazja company."
-
       }
     ]
   }
