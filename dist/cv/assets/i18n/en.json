@@ -134,10 +134,23 @@
     "title": "My projects",
     "child": [
       {
+        "title": "React & Angular <br/>MDBootstrap",
+        "link": {
+          "title": "mdbootstrap.com",
+          "to": "https://mdbootstrap.com/",
+          "gitTitle": "Github: github.com/mdbootstrap",
+          "gitTo": "https://github.com/mdbootstrap"
+        },
+        "details": [
+          "Angular 8", "TypeScript", "Scss", "React.js"
+        ],
+        "description": "My collaboration in creating components for MDBootstrap.com"
+      },
+      {
         "title": "CV Online",
         "link": {
-          "title": "kordrad.github.io/cv/",
-          "to": "https://kordrad.github.io/cv/cv-pl.html",
+          "title": "kord-cv.netlify.com",
+          "to": "https://kord-cv.netlify.com/",
           "gitTitle": "Github: www.github.com/Kordrad/cv",
           "gitTo": "https://github.com/Kordrad/cv"
         },

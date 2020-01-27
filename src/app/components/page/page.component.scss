@@ -47,7 +47,7 @@ section#content {
   //border-top: $border;
 
   aside section, main section {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     h3 {
       text-transform: uppercase;
@@ -157,7 +157,7 @@ section#content {
         grid-template-areas: 'title' 'link' 'details' 'description' 'project-link';
         grid-gap: 10px;
 
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
         h5 {
           grid-area: title;
@@ -234,7 +234,7 @@ app-control-menu {
   header {
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 'img name' 'img description';
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     h2 {
       text-align: center;
@@ -340,20 +340,12 @@ app-control-menu {
   section#content {
 
     main {
-      min-height: 110%;
-      max-height: 110%;
-
-
       section#experience {
         ul {
           li {
             &::before {
-              //height: calc(100% + 10px);
-              //bottom: -18px;
               left: -12px;
             }
-
-
           }
         }
       }

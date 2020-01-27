@@ -66,8 +66,8 @@
       <h3 [innerHTML]="'projects.title' | translate | bold"></h3>
       <aside>
         <div class="project" *ngFor="let project of 'projects.child' | translate">
-          <h5>{{project.title}}</h5>
-          <a [href]="project.link.to">{{project.link.title || project.link.to}}</a>
+          <h5 [innerHTML]="project.title"></h5>
+          <a [href]="project.link.to" target="_blank">{{project.link.title || project.link.to}}</a>
           <b>{{project.details.join(', ')}}</b>
           <p>
             {{project.description}}
