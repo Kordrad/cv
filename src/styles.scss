@@ -32,8 +32,19 @@ body, html {
 //
 //// Extra large devices (large desktops, 1200px and up)
 //@media (min-width: 1200px) { ... }
-@media (min-width: 8.29in) {
+@media (min-width: 8.29in), print {
   :root {
     font-size: 10px;
   }
+}
+@media print {
+
+  html, body {
+    height:100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    background-color: $theme-color-dark;
+  }
+
 }

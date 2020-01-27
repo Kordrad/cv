@@ -1,6 +1,6 @@
 {
   "name": "Konrad Stępień",
-  "position": "Front end - Angular web developer",
+  "position": "Front end Angular - młodszy programista z ponad rokiem doświadczenia w zakresie front-endu szuka okazji do poszerzenia wiedzy na temat tworzenia stron internetowych",
   "objective": {
     "title": "Cel zawodowy",
     "description": "Poszukuję stanowiska programisty Angular Front-End, w którym mogę wykorzystać swoje umiejętności i doświadczenie, aby dobrze prosperować w firmie."
@@ -145,5 +145,6 @@
 
       }
     ]
-  }
+  },
+  "clause": ""
 }

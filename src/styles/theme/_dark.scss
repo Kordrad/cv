@@ -8,10 +8,9 @@ $theme-color-dark:  #e0e1de;
 $theme-border: 2px solid $theme-color-dark;
 $theme-font-color: #eeeeee;
 
-
 $theme: (
   body: (
-    background-color: $theme-color-secondary,
+    background-color: gray,
     color: $theme-font-color
   ),
   'body:before':(
@@ -39,7 +38,10 @@ $theme: (
   'a': (
     color: $theme-font-color
   ),
-  'aside section:not(:first-of-type), main section:not(:first-of-type)': (
+  'aside section:not(:first-of-type)': (
+    border-top: $theme-border
+  ),
+  'main section:not(:first-of-type)': (
     border-top: $theme-border
   ),
   'section#content > main': (
@@ -48,9 +50,6 @@ $theme: (
   'section#experience li:before':(
     border-left: $theme-border
   ),
-  '.control-menu': (
-    background-color: $theme-color-primary
-  )
 );
 
 

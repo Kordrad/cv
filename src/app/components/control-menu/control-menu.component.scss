@@ -6,7 +6,7 @@ section {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
+  background-color: gray;
   * {
     margin: 0;
   }
@@ -46,20 +46,27 @@ section {
   }
 }
 
-@media (min-width: 8.29in) {
+@media (min-width: 8.29in), print{
   section {
     flex-direction: column;
     height: 200px;
     background: unset;
+    text-align: center;
+
     * {
       display: flex;
       flex-direction: column;
       left: 50%;
       transform: translateX(-50%);
       position: relative;
+      text-align: center;
     }
     span {
       display: none;
+    }
+
+    .dark-theme {
+      margin-top: 15px;
     }
 
     .lang img:nth-of-type(2) {

@@ -9,7 +9,7 @@ $theme-font-color: #202223;
 
 $theme: (
   body: (
-    //background-color: $theme-color-secondary,
+    background-color: gray,
     color: $theme-font-color
   ),
   'body:before':(
@@ -46,9 +46,6 @@ $theme: (
   'section#experience li:before':(
     border-left: $theme-border
   ),
-  '.control-menu': (
-    background-color: $theme-color-primary
-  )
 );
 
 

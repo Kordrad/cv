@@ -24,4 +24,9 @@ export class ControlMenuComponent implements OnInit {
   changeLang = (lang: string) => {
     this.translate.use(lang);
   };
+
+  print = () => {
+    alert('To print CV, please remove margins in print settings.');
+    window.print();
+  }
 }

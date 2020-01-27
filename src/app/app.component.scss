@@ -47,22 +47,40 @@ app-control-menu {
   }
 }
 
-@media (min-width: 8.29in) {
+@media (min-width: 8.29in), print{
   .container {
     max-height: 11.7in;
     width: 8.29in;
     min-width: unset;
     min-height: unset;
-    margin-top: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
+    box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.75);
   }
   app-control-menu {
+    background-color: unset;
     display: unset;
     position: fixed;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
+  }
+}
+
+@media print {
+  app-control-menu {
+    display: none;
+  }
+  .container {
+    margin: 0;
+    height: 98.75%;
+    overflow: hidden;
+    box-shadow: none;
+    .content {
+      height: 100%;
+    }
   }
 }
