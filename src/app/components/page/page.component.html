@@ -1,20 +1,14 @@
 <!--<span>{{'langTest' | translate}}</span>-->
-<header>
-  <img src="./assets/img/user.jpg" alt="User"/>
-
-  <div>
-    <h1 [innerHTML]="'name' | translate | bold"></h1>
-
-  </div>
-  <h2>
-    {{'position' | translate}}
-  </h2>
-</header>
-
-<section id="content">
+<div>
   <aside>
+    <section id="user">
+      <img src="./assets/img/user.jpg" alt="User"/>
+      <h1>{{'name' | translate}}</h1>
+      <h2>{{'position' | translate}}</h2>
+    </section>
+
     <section id="contact">
-      <h3>{{'contact.title' | translate}}</h3>
+      <h3><span>{{'contact.title' | translate}}</span></h3>
       <ul>
         <li *ngFor="let contact of 'contact.child' | translate">
           <i antIcon [type]="contact.icon" theme="fill"></i>
@@ -22,18 +16,8 @@
       </ul>
     </section>
 
-    <section id="skills">
-      <h3>{{'skills.title' | translate}}</h3>
-      <ul>
-        <li *ngFor="let skill of 'skills.child' | translate">
-          <h4>{{skill.level}}</h4>
-          <p> {{skill.name.sort() | join: ', '}} </p>
-        </li>
-      </ul>
-    </section>
-
     <section id="languages">
-      <h3>{{'languages.title' | translate}}</h3>
+      <h3><span>{{'languages.title' | translate}}</span></h3>
       <ul>
         <li *ngFor="let language of 'languages.child' | translate">
           {{language.language}} <span>{{language.level}}</span>
@@ -42,48 +26,67 @@
     </section>
 
     <section id="hobbies">
-      <h3>{{'hobbies.title' | translate}}</h3>
+      <h3><span>{{'hobbies.title' | translate}}</span></h3>
       <p>{{'hobbies.child' | translate | join: ', ' }}</p>
+    </section>
+
+    <section id="skills">
+      <h3><span>{{'skills.title' | translate}}</span></h3>
+      <ul>
+        <li *ngFor="let skill of 'skills.child' | translate">
+          <span>{{skill.technology}}</span> <span class="level">{{skill.level}}</span>
+        </li>
+      </ul>
+    </section>
+    <section id="additional-skills">
+      <h3><span>{{'additionalSkills.title' | translate}}</span></h3>
+      <p>{{'additionalSkills.child' | translate | join: ', '}}</p>
+    </section>
+    <section id="programs">
+      <h3><span>{{'programs.title' | translate}}</span></h3>
+      <p>{{'programs.child' | translate | join: ', '}}</p>
     </section>
   </aside>
   <main>
     <section id="objective">
-      <h3 [innerHTML]="'objective.title' | translate | bold"></h3>
+      <h3>{{'objective.title' | translate}}</h3>
       <p>{{'objective.description' | translate}}</p>
     </section>
     <section id="experience">
-      <h3 [innerHTML]="'experience.title' | translate | bold"></h3>
-      <ul *ngFor="let jobs of 'experience.child' | translate | sortByDate">
-        <li *ngFor="let job of jobs">
-          <span class="end">{{job.date[1] ? job.date[1] : job.date[0]}}</span>
-          <span class="start" *ngIf="job.date[1]">{{job.date[0]}}</span>
-          <h4>{{job.title}}</h4>
-          <p *ngIf="job.description" [innerHTML]="job.description"></p>
-        </li>
-      </ul>
-    </section>
-    <section id="projects">
-      <h3 [innerHTML]="'projects.title' | translate | bold"></h3>
-      <aside>
-        <div class="project" *ngFor="let project of 'projects.child' | translate">
-          <h5>{{project.title}}</h5>
-          <a [href]="project.link.to">{{project.link.title || project.link.to}}</a>
-          <b>{{project.details.join(', ')}}</b>
-          <p>
-            {{project.description}}
-          </p>
-          <small><a [href]="project.link['gitTo']">{{project.link['gitTitle']}}</a></small>
+      <h3>{{'experience.title' | translate}}</h3>
+      <div *ngFor="let work of 'experience.child' | translate">
+        <div class="title">
+          <span>{{work.date.join(' - ')}}</span>
+          <h4>{{work.title}} <span *ngIf="work.position">- {{work.position}}</span></h4>
         </div>
-      </aside>
-    </section>
-    <p *ngIf="'clause' | translate">
-      {{'clause' | translate}}
-    </p>
-  </main>
-</section>
+        <p>
+          {{work.description}}
+        </p>
 
-<app-control-menu [ngClass]="activeMenu ? 'active' : ''">
-  <button id="toggle" (click)="toggleMenu()">
-    <i antIcon [type]="'caret-up'" theme="fill"></i>
-  </button>
-</app-control-menu>
+        <div class="category-wrapper">
+          <div class="category" [ngClass]="{'no-margin': !category.title}" *ngFor="let category of work.subcategory">
+            <div class="category-title">
+              <span *ngIf="category.date">{{category.date.join(' - ')}}</span>
+              <h4>{{category.title}}</h4>
+            </div>
+            <p [innerHTML]="category.description"></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3>{{'projects.title' | translate}}</h3>
+      <div class="category-wrapper">
+        <div class="category" [ngClass]="{'no-margin': !project.title}" *ngFor="let project of 'projects.child' | translate">
+          <div class="category-title">
+            <h4 class="upper">{{project.title}}</h4>
+            <a [href]="project.link">{{project.link}}</a>
+          </div>
+          <a [href]="project.git">{{project.git}}</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
