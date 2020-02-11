@@ -91,9 +91,9 @@
              *ngFor="let project of 'projects.child' | translate">
           <div class="category-title">
             <h4 class="upper">{{project.title}}</h4>
-            <a [href]="project.link" target="_blank">{{project.link}}</a>
+            <a [href]="'https://'+project.link" target="_blank">{{project.link}}</a>
           </div>
-          <a [href]="project.git" target="_blank">{{project.git}}</a>
+          <a [href]="'https://'+project.git" target="_blank">{{project.git}}</a>
         </div>
       </div>
     </section>
