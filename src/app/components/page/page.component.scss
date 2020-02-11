@@ -1,11 +1,19 @@
 $color: #362D2E;
+$main-color: #E6E6E8;
 $space: 32px;
 aside, main {
   padding: $space;
 
 }
 
+.page {
+  background-color: white;
+
+}
+
 aside {
+  grid-area: aside;
+
   section#user {
     display: grid;
     grid-template-rows: auto;
@@ -130,16 +138,16 @@ aside {
 
   section#skills {
     $border: 5px solid $color;
-    $top: 8px;
-    margin-top: $top;
+    $top: 45%;
+    margin-top: 8px;
     margin-bottom: 0;
 
 
     h3 {
-      top: -$top;
+      //top: -$top;
       width: calc(100% + 10px);
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, -$top);
     }
 
     border-left: $border;
@@ -147,7 +155,7 @@ aside {
     border-bottom: $border;
 
     ul {
-      margin-bottom: $top+$top;
+      margin-bottom: 16px;
 
       li {
 
@@ -173,8 +181,10 @@ aside {
 
   section#additional-skills, section#programs {
     $padding: 20px;
-    margin: 0;
     padding-top: $padding;
+    position: relative;
+    top: -1px;
+    margin: 0 0 -1px;
 
     &, * {
       background-color: $color;
@@ -201,10 +211,15 @@ aside {
 }
 
 main {
-  background-color: #E6E6E8;
+  grid-area: main;
+  background-color: $main-color;
   margin-bottom: $space;
   font-size: 1.2rem;
   position: relative;
+
+  section#user-name {
+    display: none;
+  }
 
   h3 {
     position: relative;
@@ -215,10 +230,11 @@ main {
     padding: 7px $space;
     font-size: 1.7rem;
     text-transform: uppercase;
+    margin-bottom: 25px;
   }
 
   section {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     & > div {
       margin-bottom: 25px;
@@ -252,8 +268,9 @@ main {
 
     .category-wrapper {
       $margin: 12px;
+
       .category {
-        margin-top: 25px;
+        margin-top: 15px;
 
         &:not(.no-margin) {
           margin-left: $margin;
@@ -276,6 +293,7 @@ main {
 
         h4 {
           text-transform: none;
+
           &.upper {
             text-transform: uppercase;
           }
@@ -285,5 +303,116 @@ main {
 
   }
 
+  #clause {
+    opacity: .5;
+    margin: 0;
+    padding-right: 25px;
+  }
 
 }
+
+@media screen and (min-width: 640px), print {
+  .page {
+    display: grid;
+    grid-template-areas: 'aside main';
+    grid-template-columns: 320px auto;
+  }
+
+  aside {
+    section#user {
+      img {
+        max-height: 140px;
+        max-width: 140px;
+      }
+
+      margin: 0 0 25px;
+    }
+
+    .user-name {
+      display: none;
+    }
+  }
+  main {
+    section#user-name {
+      display: block;
+      //height: $height;
+      position: relative;
+      text-transform: uppercase;
+      //margin-top: 32px;
+      height: 125px;
+
+      //div {
+        &:after {
+          content: '';
+          $size: 35px;
+          height: $size;
+          width: $size;
+          background-color: $main-color;
+          position: absolute;
+          left: -$size/2 - 32px;
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+        }
+      //}
+
+      h1 {
+        font-size: 3rem;
+        margin: 0 0 15px 0;
+      }
+
+      h2 {
+        font-weight: 400;
+        margin: 0
+      }
+    }
+  }
+
+  main section#user-name div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+}
+
+@media screen and (min-width: 720px), print {
+  .page {
+    transition: 0.4s;
+    main {
+      section {
+        .category-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+
+          .category {
+            width: calc(50% - 12px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 210mm), print {
+  .page {
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    margin: 50px auto;
+  }
+  #clause {
+    position: absolute;
+    bottom: 25px;
+  }
+}
+
+@media print {
+  html, body, .page {
+    height: 297mm;
+  }
+  .page {
+    margin: 0;
+  }
+}
+

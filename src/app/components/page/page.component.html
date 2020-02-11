@@ -1,10 +1,12 @@
 <!--<span>{{'langTest' | translate}}</span>-->
-<div>
+<div class="page">
   <aside>
     <section id="user">
       <img src="./assets/img/user.jpg" alt="User"/>
-      <h1>{{'name' | translate}}</h1>
-      <h2>{{'position' | translate}}</h2>
+      <div class="user-name">
+        <h1>{{'name' | translate}}</h1>
+        <h2>{{'position' | translate}}</h2>
+      </div>
     </section>
 
     <section id="contact">
@@ -48,6 +50,12 @@
     </section>
   </aside>
   <main>
+    <section id="user-name">
+      <div>
+        <h1>{{'name' | translate}}</h1>
+        <h2>{{'position' | translate}}</h2>
+      </div>
+    </section>
     <section id="objective">
       <h3>{{'objective.title' | translate}}</h3>
       <p>{{'objective.description' | translate}}</p>
@@ -79,14 +87,18 @@
     <section id="projects">
       <h3>{{'projects.title' | translate}}</h3>
       <div class="category-wrapper">
-        <div class="category" [ngClass]="{'no-margin': !project.title}" *ngFor="let project of 'projects.child' | translate">
+        <div class="category" [ngClass]="{'no-margin': !project.title}"
+             *ngFor="let project of 'projects.child' | translate">
           <div class="category-title">
             <h4 class="upper">{{project.title}}</h4>
-            <a [href]="project.link">{{project.link}}</a>
+            <a [href]="project.link" target="_blank">{{project.link}}</a>
           </div>
-          <a [href]="project.git">{{project.git}}</a>
+          <a [href]="project.git" target="_blank">{{project.git}}</a>
         </div>
       </div>
     </section>
+    <p id="clause">
+      {{'clause' | translate}}
+    </p>
   </main>
 </div>
