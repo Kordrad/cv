@@ -1,184 +1,175 @@
 {
   "name": "Konrad Stepien",
-  "position": "Front end Angular - junior developer with one plus year in the front-end position of experience is seeking an opportunity to extend web development knowledge",
-  "objective": {
-    "title": "Career Objective",
-    "description": "Looking for a position as Angular Front-End developer where I can exercise my skill and experience to prosper with the company."
-  },
-  "contact": {
-    "title": "Contacts",
-    "child": [
-      {
-        "title": "(+48) 737 476 569",
-        "link": "tel:+48737476569",
-        "icon": "phone"
-      },
-      {
-        "title": "kord.stp@gmail.com",
-        "link": "mailto:kord.stp@gmail.com",
-        "icon": "mail"
-      },
-      {
-        "title": "LinkedIn.com/in/Kordrad",
-        "link": "https://www.linkedin.com/in/kordrad/",
-        "icon": "linkedin"
-      },
-      {
-        "title": "GitHub.com/Kordrad",
-        "link": "https://github.com/Kordrad",
-        "icon": "github"
-      }
-    ]
-  },
-  "languages": {
-    "title": "Languages",
-    "child": [
-      {
-        "language": "Polish",
-        "level": "Native"
-      },
-      {
-        "language": "English",
-        "level": "B2"
-      }
-    ]
-  },
-  "hobbies": {
-    "title": "Hobbies",
-    "child": [
-      "New technology",
-      "video games",
-      "logic games"
-    ]
-  },
-  "experience": {
-    "title": "Work Experience",
-    "child": [
-      [
-        {
-          "date": [
-            "2018.10",
-            "2019.03"
-          ],
-          "title": "Afisz Media SP. Z O.O. - Website designer",
-          "description": "Graphic design of templates for websites. Creating a template based on graphics created in Photoshop Website and CMS panel installation for client hosting. Creating and editing graphics."
-        }
+  "position": "Angular developer",
+  "objective.title": "Career Objective",
+  "objective.description": "Looking for a position as Angular Front-End developer where I can exercise my skill and experience to prosper with the company.",
+  "contact.title": "Contacts",
+  "contact.child": [
+    {
+      "title": "(+48) 737 476 569",
+      "link": "tel:+48737476569",
+      "icon": "phone"
+    },
+    {
+      "title": "kord.stp@gmail.com",
+      "link": "mailto:kord.stp@gmail.com",
+      "icon": "mail"
+    },
+    {
+      "title": "linkedin.com/in/Kordrad",
+      "link": "https://www.linkedin.com/in/kordrad/",
+      "icon": "linkedin"
+    },
+    {
+      "title": "github.com/Kordrad",
+      "link": "https://github.com/Kordrad",
+      "icon": "github"
+    }
+  ],
+  "languages.title": "Languages",
+  "languages.child": [
+    {
+      "language": "Polish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "B1"
+    }
+  ],
+  "hobbies.title": "Hobbies",
+  "hobbies.child": [
+    "New technology",
+    "video games",
+    "logic games"
+  ],
+  "skills.title": "Skills",
+  "skills.child": [
+    {
+      "technology": "Angular 8",
+      "level": "Actual framework"
+    },
+    {
+      "technology": "React.js",
+      "level": "6 month exp"
+    },
+    {
+      "technology": "Typescript",
+      "level": "good"
+    },
+    {
+      "technology": "JavaScript",
+      "level": "good"
+    },
+    {
+      "technology": "Node.js",
+      "level": "basic"
+    },
+    {
+      "technology": "Git",
+      "level": ""
+    },
+    {
+      "technology": "scss",
+      "level": "good"
+    },
+    {
+      "technology": "jest",
+      "level": "medium"
+    },
+    {
+      "technology": "jQuery",
+      "level": ""
+    }
+  ],
+  "additionalSkills.title": "Additional skills",
+  "additionalSkills.child": [
+    "Express",
+    "Firebase",
+    "Less",
+    "MySql",
+    "Next",
+    "NoSql",
+    "PHP",
+    "React Native",
+    "SEO",
+    "Vue.js",
+    "WordPress"
+  ],
+  "programs.title": "Programs",
+  "programs.child": [
+    "Adobe Photoshop",
+    "Adobe XD",
+    "Linux",
+    "VS Code",
+    "WebStorm",
+    "Windows"
+  ],
+  "experience.title": "Work Experience",
+  "experience.child": [
+    {
+      "date": [
+        "June 2019",
+        "Until now"
       ],
-      [
+      "title": "MDBootstrap",
+      "position": "Junior Angular and React developer ",
+      "description": "Creating and developing components for the MDBootstrap packages. Creating documentation of created components. Contact on the forum and support customers. Making a Unit tests.",
+      "subcategory": [
         {
           "date": [
-            "2019.06",
-            "2019.11"
-          ],
-          "title": "MDBootstrap - Junior React Developer",
-          "description": "Creating components for the mentioned technology. Customer support. <p>Work in technologies: React.js, TypeScript, Git, NodeJs, HTML, CSS, Unit Tests</p> <p>Familiarity with: React Native, Gulp, Express</p>"
-        },
-        {
-          "date": [
+            "December 2019",
             "Until now"
           ],
-          "title": "MDBootstrap - Junior Angular Developer",
-          "description": "Creating components for the mentioned technology. Customer support. <p>Work in technologies: Angular 8, Git, HTML, SCSS, TypeScript</p>"
+          "title": "Angular Junior Developer",
+          "description": "Work in technologies: <br/> Angular 8, Git, HTML, SCSS, TypeScript"
+        },
+        {
+          "date": [
+            "June 2019",
+            "November 2019"
+          ],
+          "title": "React Junior Developer",
+          "description": "Work in technologies: <br/> React.js, TypeScript, Git, NodeJs, HTML, CSS, Jest"
         }
       ]
-    ]
-  },
-  "skills": {
-    "title": "Skills",
-    "child": [
-      {
-        "level": "Commercial experience",
-        "name": [
-          "Angular 8",
-          "React.js",
-          "Typescript",
-          "JavaScript",
-          "Node.js",
-          "Scss + Css",
-          "jQuery",
-          "Git",
-          "RWD",
-          "Unit tests"
-        ]
-      },
-      {
-        "level": "Additional knowledge about",
-        "name": [
-          "Vue.js",
-          "MySql",
-          "Firebase",
-          "NoSql",
-          "Less",
-          "SEO",
-          "PHP",
-          "WordPress",
-          "React Native",
-          "Express",
-          "Next"
-        ]
-      },
-      {
-        "level": "Programs and Systems",
-        "name": [
-          "Adobe Photoshop",
-          "Adobe XD",
-          "Windows",
-          "Linux",
-          "WebStorm",
-          "VSCode"
-        ]
-      }
-    ]
-  },
-  "projects": {
-    "title": "My projects",
-    "child": [
-      {
-        "title": "React & Angular <br/>MDBootstrap",
-        "link": {
-          "title": "mdbootstrap.com",
-          "to": "https://mdbootstrap.com/",
-          "gitTitle": "Github: github.com/mdbootstrap",
-          "gitTo": "https://github.com/mdbootstrap"
+    },
+    {
+      "date": [
+        "October 2018",
+        "March 2019"
+      ],
+      "title": "Afisz Media SP. Z O.O.",
+      "position": "Web Designer",
+      "description": "Making graphics design of templates for websites. Creating a template based on graphics created in Photoshop and CMS panel installation for client hosting. Creating and editing graphics.",
+      "subcategory": [
+        {
+          "description": "Work in technologies: <br/> • jQuery, CSS, HTML, PHP"
         },
-        "details": [
-          "Angular 8", "TypeScript", "Scss", "React.js"
-        ],
-        "description": "My collaboration in creating components for MDBootstrap.com"
-      },
-      {
-        "title": "CV Online",
-        "link": {
-          "title": "kord-cv.netlify.com",
-          "to": "https://kord-cv.netlify.com/",
-          "gitTitle": "Github: www.github.com/Kordrad/cv",
-          "gitTo": "https://github.com/Kordrad/cv"
-        },
-        "details": [
-          "Angular 8",
-          "SCSS",
-          "Typescript",
-          "ngx-translate"
-        ],
-        "description": "My curriculum vitae as a website."
-      },
-      {
-        "title": "Bakery Fantazja",
-        "link": {
-          "title": "www.cukiernia-fantazja.pl",
-          "to": "www.cukiernia-fantazja.pl",
-          "gitTitle": "Github: github.com/Kordrad/bakery-fantazja",
-          "gitTo": "https://github.com/Kordrad/bakery-fantazja"
-        },
-        "details": [
-          "VUE.JS",
-          "SCSS",
-          "HTML",
-          "PHOTOSHOP"
-        ],
-        "description": "Project implemented for the Cukiernia Fantazja company."
-      }
-    ]
-  },
+        {
+          "description": "Programs: <br/> • Photoshop, Adobe XD"
+        }
+      ]
+    }
+  ],
+  "projects.title": "Projects",
+  "projects.child": [
+    {
+      "title": "Pakcages MDBootstrap",
+      "link": "www.mdbootstrap.com",
+      "git": "github.com/mdbootstrap"
+    },
+    {
+      "title": "Bakery Fantazja",
+      "link": "www.cukiernia-fantazja.pl",
+      "git": "github.com/Kordrad/bakery-fantazja"
+    },
+    {
+      "title": "CV Online",
+      "link": "kordrad.github.io/cv",
+      "git": "github.com/Kordrad/cv"
+    }
+  ],
+
   "clause": ""
 }

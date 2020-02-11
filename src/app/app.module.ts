@@ -12,7 +12,6 @@ import { IconModule } from '@ant-design/icons-angular';
 import {PageComponent} from './components/page/page.component';
 import { BoldPipe } from './pipe/bold.pipe';
 import { JoinPipe } from './pipe/join.pipe';
-import { ControlMenuComponent } from './components/control-menu/control-menu.component';
 import { SortByDatePipe } from './pipe/sort-by-date.pipe';
 
 
@@ -27,7 +26,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     PageComponent,
     BoldPipe,
     JoinPipe,
-    ControlMenuComponent,
     SortByDatePipe,
   ],
   imports: [

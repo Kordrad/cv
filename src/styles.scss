@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "styles/fonts/fonts";
+@import "styles/abstracts/functions";
 
 // START: Theme
 @import "styles/theme/light";
@@ -10,41 +11,31 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-:root {
-  font-size: 15px;
+  background-color: gray;
 }
 
-* {
-  outline:none;
-}
-
-
-//// Extra small devices (portrait phones, less than 576px)
-//@media (min-width: 576px) { ... }
-//
-//// Medium devices (tablets, 768px and up)
-//@media (min-width: 768px) { ... }
-//
-//// Large devices (desktops, 992px and up)
-//@media (min-width: 992px) { ... }
-//
-//// Extra large devices (large desktops, 1200px and up)
-//@media (min-width: 1200px) { ... }
-@media (min-width: 8.29in), print {
+@media all and (max-width: 640px) {
   :root {
-    font-size: 10px;
+    font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
 }
-@media print {
 
-  html, body {
-    height:100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden;
-    background-color: $theme-color-dark;
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+$min_width: 320px;
+$max_width: 640px;
+$min_font: 10px;
+$max_font: 20px;
+
+:root {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+@media all and (min-width: $max_width) {
+  :root {
+    font-size: $min_font;
   }
-
 }
