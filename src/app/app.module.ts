@@ -14,10 +14,10 @@ import { BoldPipe } from './pipe/bold.pipe';
 import { JoinPipe } from './pipe/join.pipe';
 import { SortByDatePipe } from './pipe/sort-by-date.pipe';
 
-
+// import {APP_BASE_HREF} from '@angular/common';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
