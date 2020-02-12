@@ -155,7 +155,7 @@
   "projects.title": "Projects",
   "projects.child": [
     {
-      "title": "Pakcages MDBootstrap",
+      "title": "Packages MDBootstrap",
       "link": "www.mdbootstrap.com",
       "git": "github.com/mdbootstrap"
     },
