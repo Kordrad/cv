@@ -105,7 +105,7 @@
     "WebStorm",
     "Windows"
   ],
-  "experience.title": "Work Experience",
+  "experience.title": "Experience",
   "experience.child": [
     {
       "date": [
@@ -150,6 +150,15 @@
           "description": "Programs: <br/> • Photoshop, Adobe XD"
         }
       ]
+    },
+    {
+      "date": [
+        "2014",
+        "2017"
+      ],
+      "title": "Technical School of Tadeusz Kościuszko in Leżajsk",
+      "position": "IT Technician",
+      "description": "Obtaining the title of \"IT Technician\" and getting qualifications E12, E13, E14."
     }
   ],
   "projects.title": "Projects",
