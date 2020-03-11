@@ -23,7 +23,7 @@
   "skills.title": "Umiejętności",
   "skills.child": [
     {
-      "technology": "Angular 8",
+      "technology": "Angular 8+",
       "level": "Aktualny framework"
     },
     {

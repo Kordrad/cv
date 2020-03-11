@@ -46,7 +46,7 @@
   "skills.title": "Skills",
   "skills.child": [
     {
-      "technology": "Angular 8",
+      "technology": "Angular 8+",
       "level": "Actual framework"
     },
     {
