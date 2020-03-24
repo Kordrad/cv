@@ -46,8 +46,12 @@
   "skills.title": "Skills",
   "skills.child": [
     {
-      "technology": "Angular 8+",
+      "technology": "Angular 9",
       "level": "Actual framework"
+    },
+    {
+      "technology": "RxJS",
+      "level": "basic"
     },
     {
       "technology": "React.js",

@@ -23,8 +23,12 @@
   "skills.title": "Umiejętności",
   "skills.child": [
     {
-      "technology": "Angular 8+",
+      "technology": "Angular 9",
       "level": "Aktualny framework"
+    },
+    {
+      "technology": "RxJS",
+      "level": "podstawy"
     },
     {
       "technology": "React.js",
@@ -32,15 +36,15 @@
     },
     {
       "technology": "Typescript",
-      "level": "dobre"
+      "level": "dobry"
     },
     {
       "technology": "JavaScript",
-      "level": "dobre"
+      "level": "dobry"
     },
     {
       "technology": "Node.js",
-      "level": "podstawowy"
+      "level": "podstawy"
     },
     {
       "technology": "Git",
@@ -48,7 +52,7 @@
     },
     {
       "technology": "scss",
-      "level": "dobre"
+      "level": "dobry"
     },
     {
       "technology": "jest",
