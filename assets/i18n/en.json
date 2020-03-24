@@ -47,7 +47,7 @@
   "skills.child": [
     {
       "technology": "Angular 9",
-      "level": "Actual framework"
+      "level": "Medium"
     },
     {
       "technology": "RxJS",
@@ -126,7 +126,7 @@
             "Until now"
           ],
           "title": "Angular Junior Developer",
-          "description": "Work in technologies: <br/> Angular 8, Git, HTML, SCSS, TypeScript, Unit tests"
+          "description": "Work in technologies: <br/> Angular 8, Git, HTML, SCSS, TypeScript, Unit tests - Jest"
         },
         {
           "date": [
@@ -134,7 +134,7 @@
             "November 2019"
           ],
           "title": "React Junior Developer",
-          "description": "Work in technologies: <br/> React.js, TypeScript, Git, NodeJs, HTML, CSS, Jest"
+          "description": "Work in technologies: <br/> React.js, TypeScript, Git, NodeJs, HTML, CSS, Unit tests - Jest"
         }
       ]
     },
@@ -174,7 +174,7 @@
     },
     {
       "title": "Bakery Fantazja",
-      "link": "www.cukiernia-fantazja.pl",
+      "link": "cukiernia-fantazja.netlify.com",
       "git": "github.com/Kordrad/bakery-fantazja"
     },
     {
