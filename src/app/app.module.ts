@@ -1,4 +1,4 @@
-import {BrowserModule} from '@angular/platform-browser';
+import {BrowserModule, Title} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
@@ -6,13 +6,14 @@ import {AppComponent} from './app.component';
 
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import { IconModule } from '@ant-design/icons-angular';
+import {IconModule} from '@ant-design/icons-angular';
 
 
 import {PageComponent} from './components/page/page.component';
-import { BoldPipe } from './pipe/bold.pipe';
-import { JoinPipe } from './pipe/join.pipe';
-import { SortByDatePipe } from './pipe/sort-by-date.pipe';
+import {BoldPipe} from './pipe/bold.pipe';
+import {JoinPipe} from './pipe/join.pipe';
+import {SortByDatePipe} from './pipe/sort-by-date.pipe';
+import { NavComponent } from './components/nav/nav.component';
 
 // import {APP_BASE_HREF} from '@angular/common';
 // AoT requires an exported function for factories
@@ -27,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BoldPipe,
     JoinPipe,
     SortByDatePipe,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     IconModule
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule {

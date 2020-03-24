@@ -1,0 +1,12 @@
+<nav class="nav">
+  <span>{{title}}</span>
+  <div>
+    <i antIcon [type]="'printer'" theme="fill" (click)="print()"></i>
+  </div>
+  <div class="nav__country">
+    <img routerLink="/pl" src="https://raw.githubusercontent.com/madebybowtie/FlagKit/master/Assets/PNG/PL%402x.png"
+         alt="Poland" (click)="changeLang('pl')"/>
+    <img routerLink="/en" src="https://raw.githubusercontent.com/madebybowtie/FlagKit/master/Assets/PNG/GB%402x.png"
+         alt="English" (click)="changeLang('en')"/>
+  </div>
+</nav>
