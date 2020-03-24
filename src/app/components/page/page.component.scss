@@ -320,6 +320,7 @@ main {
     display: grid;
     grid-template-areas: 'aside main';
     grid-template-columns: 320px auto;
+    margin-top: 42px;
   }
 
   aside {
@@ -403,7 +404,7 @@ main {
     width: 210mm;
     height: 297mm;
     overflow: hidden;
-    margin: 50px auto;
+    margin: 50px+42px auto;
   }
   #clause {
     position: absolute;
