@@ -128,7 +128,7 @@ aside {
     text-transform: uppercase;
 
     ul li span {
-      opacity: 50%;
+      color: rgba(0, 0, 0, 0.51);
     }
   }
 
@@ -174,7 +174,7 @@ aside {
           margin-left: 0;
           margin-right: 25px;
           text-transform: capitalize;
-          opacity: 50%;
+          color: rgba(0, 0, 0, 0.51);
         }
       }
     }
@@ -308,7 +308,7 @@ main {
   }
 
   #clause {
-    opacity: .5;
+    color: rgba(0, 0, 0, 0.51);
     margin: 0;
     padding-right: 25px;
   }
