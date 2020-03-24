@@ -82,7 +82,7 @@
             "Do teraz"
           ],
           "title": "Angular Junior Developer",
-          "description": "Praca w technologiach: <br/> Angular 8, Git, HTML, SCSS, TypeScript, Unit tests"
+          "description": "Praca w technologiach: <br/> Angular 8, Git, HTML, SCSS, TypeScript, Unit tests - Jest"
         },
         {
           "date": [
@@ -90,7 +90,7 @@
             "Listopad 2019"
           ],
           "title": "React Junior Developer",
-          "description": "Praca w technologiach: <br/> React.js, TypeScript, Git, NodeJs, HTML, CSS, Jest"
+          "description": "Praca w technologiach: <br/> React.js, TypeScript, Git, NodeJs, HTML, CSS, Unit tests - Jest"
         }
       ]
     },
