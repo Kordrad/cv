@@ -1,0 +1,58 @@
+@import "variables";
+
+$header-vertical-center: $text-header-font-size / 2;
+$border-vertical-center: $border-size / 2;
+$box-position-fix: calc(#{$header-vertical-center} - #{$border-vertical-center});
+$header-position-fix: calc(#{-$header-vertical-center} - #{$border-vertical-center});
+$box-inside-padding: calc(100% - 25px * 2);
+$width-padding: 25px;
+
+.skill-box {
+  $border: $border-size solid $color;
+
+
+  border-bottom: $border;
+  border-left: $border;
+  border-right: $border;
+
+  position: relative;
+  margin-top: $box-position-fix;
+
+}
+
+.skill-box__title {
+  top: $header-position-fix;
+  margin-left: -$border-size;
+  margin-right: -$border-size;
+}
+
+.skill-box__list {
+  margin-bottom: 16px;
+  padding: 0 $width-padding;
+}
+
+.skill-box__additional-skills,  {
+  margin: 0;
+  padding: 10px $width-padding;
+}
+
+.skill-box__list-element {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0;
+  text-transform: uppercase;
+}
+
+.skill-box__section {
+  background-color: $color;
+  color: $color-inverted;
+
+  .text-header {
+    margin: 0 -$border-size;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    &:before, &:after {
+      background-color: $color-inverted;
+    }
+  }
+}

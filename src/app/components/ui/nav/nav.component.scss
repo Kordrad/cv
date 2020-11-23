@@ -1,3 +1,5 @@
+@import "src/styles/abstracts/variables";
+
 nav {
   display: flex;
   position: fixed;
@@ -19,6 +21,7 @@ nav {
 
   img {
     max-height: 20px;
+
     &:not(:first-of-type) {
       margin-left: 10px;
     }
@@ -27,7 +30,7 @@ nav {
 
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: $sm) {
   nav {
     bottom: unset;
     top: 0;

@@ -1,0 +1,10 @@
+<div [ngClass]="{
+  'title--category': type === ExperienceTitle.category,
+  'title--experience': type === ExperienceTitle.experience
+}">
+  <span *ngIf="!!date">{{date.join(' - ')}}</span>
+  <h4 *ngIf="!!title" class="title-header">{{title}}
+    <span *ngIf="position"
+          class="position">- {{position}}</span>
+  </h4>
+</div>

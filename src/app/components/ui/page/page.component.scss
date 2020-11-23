@@ -1,0 +1,127 @@
+@import "variables";
+
+aside, main {
+  padding: $space;
+}
+
+.page {
+  background-color: white;
+
+}
+
+aside {
+  grid-area: aside;
+  font-size: $text-font-size;
+  display: flex;
+  flex-direction: column;
+}
+
+.information-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  grid-area: main;
+  background-color: $main-color;
+  margin-bottom: $space;
+  font-size: $text-font-size;
+  position: relative;
+}
+
+.user-box {
+  display: none;
+}
+
+.projects {
+  column-count: 1;
+  gap: $space-between-elements;
+  app-project-box {
+    display: block;
+    margin-bottom: $space-between-elements;
+  }
+}
+
+//
+@media screen and (min-width: $sm), print {
+  .page {
+    display: grid;
+    grid-template-areas: 'aside main';
+    grid-template-columns: $xs auto;
+    margin-top: 42px;
+  }
+
+  .user-box {
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    height: 125px;
+
+    &:after {
+      $size: 35px;
+      content: "";
+      height: $size;
+      width: $size;
+      background-color: $main-color;
+      position: absolute;
+      left: -49.5px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  .user-box__wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .user-box__name {
+    font-size: $user-details-font-size;
+    margin: 0 0 15px;
+  }
+
+  .user-box__position {
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .projects {
+    column-count: 2;
+    app-project-box {
+      display: unset;
+    }
+  }
+}
+
+
+@media screen and (min-width: $md), print {
+  .page {
+    transition: 0.4s;
+  }
+}
+
+@media screen and (min-width: $lg), print {
+  .page {
+    width: 210mm;
+    height: $page-height;
+    overflow: hidden;
+    margin: 50px+42px auto;
+  }
+  #clause {
+    position: absolute;
+    bottom: 25px;
+  }
+}
+
+@media print {
+  html, body, .page {
+    height: $page-height;
+  }
+  .page {
+    margin: 0;
+  }
+}
+

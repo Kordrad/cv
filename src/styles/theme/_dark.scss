@@ -1,9 +1,0 @@
-@import "../abstracts/variables";
-@import "../abstracts/functions";
-
-
-$theme: (
-);
-
-
-@include theme('.dark', $theme)

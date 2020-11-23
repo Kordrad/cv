@@ -1,126 +1,104 @@
 {
-  "name": "Konrad Stępień",
-  "objective.title": "Cel zawodowy",
-  "objective.description": "Poszukuję stanowiska Angular Front-End Developer, w którym mogę wykorzystać swoje umiejętności i doświadczenie, aby dobrze prosperować w firmie.",
-  "contact.title": "Kontakt",
-  "languages.title": "Języki",
-  "languages.child": [
-    {
-      "language": "Polski",
-      "level": "Natywny"
-    },
-    {
-      "language": "Angielski",
-      "level": "B1"
-    }
-  ],
-  "hobbies.title": "Hobby",
-  "hobbies.child": [
-    "Nowe technologie",
-    "gry video",
-    "gry logiczne"
-  ],
-  "skills.title": "Umiejętności",
-  "skills.child": [
-    {
-      "technology": "Angular 9",
-      "level": "Średnie"
-    },
-    {
-      "technology": "RxJS",
-      "level": "podstawy"
-    },
-    {
-      "technology": "React.js",
-      "level": "6 miesięcy"
-    },
-    {
-      "technology": "Typescript",
-      "level": "dobry"
-    },
-    {
-      "technology": "JavaScript",
-      "level": "dobry"
-    },
-    {
-      "technology": "Node.js",
-      "level": "podstawy"
-    },
-    {
-      "technology": "Git",
-      "level": ""
-    },
-    {
-      "technology": "scss",
-      "level": "dobry"
-    },
-    {
-      "technology": "jest",
-      "level": "średnie"
-    },
-    {
-      "technology": "jQuery",
-      "level": ""
-    }
-  ],
-  "additionalSkills.title": "Dodatkowe umiejetności",
-  "programs.title": "Programy",
-  "experience.title": "Doświadczenie",
-  "experience.child": [
-    {
-      "date": [
-        "Czerwiec 2019",
-        "Do teraz"
-      ],
-      "title": "MDBootstrap",
-      "position": "Junior Angular and React developer ",
-      "description": "Tworzenie i rozwijanie komponentów dla pakietów MDBootstrap. Tworzenie dokumentacji dla komponentów. Kontakt na forum i obsługa klientów. Wykonywanie testów jednostkowych.",
-      "subcategory": [
-        {
-          "date": [
-            "Grudzień 2019",
-            "Do teraz"
-          ],
-          "title": "Angular Junior Developer",
-          "description": "Praca w technologiach: <br/> Angular 8, Git, HTML, SCSS, TypeScript, Unit tests - Jest"
-        },
-        {
-          "date": [
-            "Czerwiec 2019",
-            "Listopad 2019"
-          ],
-          "title": "React Junior Developer",
-          "description": "Praca w technologiach: <br/> React.js, TypeScript, Git, NodeJs, HTML, CSS, Unit tests - Jest"
-        }
-      ]
-    },
-    {
-      "date": [
-        "Październik 2018",
-        "Marzec 2019"
-      ],
-      "title": "Afisz Media SP. Z O.O.",
-      "position": "Web Designer",
-      "description": "Projektowanie graficzne szablonów stron internetowych. Tworzenie szablonu na podstawie grafiki utworzonej w programie Photoshop i instalacji panelu CMS na potrzeby hostingu klienta. Tworzenie i edycja grafiki.",
-      "subcategory": [
-        {
-          "description": "Praca w technologiach: <br/> • jQuery, CSS, HTML, PHP"
-        },
-        {
-          "description": "Programy: <br/> • Photoshop, Adobe XD"
-        }
-      ]
-    },
-    {
-      "date": [
-        "2014",
-        "2017"
-      ],
-      "title": "Technikum im. Tadeusza Kościuszki w Leżajsku",
-      "position": "Technik Informatyk",
-      "description": "Uzyskanie tytułu \"Technik Informatyk\" i zdobycie kwalifikacji E12, E13, E14."
-    }
-  ],
-  "projects.title": "Projekty",
+  "user": {
+    "name": "Konrad Stępień"
+  },
+  "objective": {
+    "title": "Cel zawodowy",
+    "description": "Poszukuję stanowiska Angular Front-End Developer, w którym mogę wykorzystać swoje umiejętności i doświadczenie, aby dobrze prosperować w firmie."
+  },
+  "contact": {
+    "title": "Kontakt"
+  },
+  "languages": {
+    "title": "Języki",
+    "data": [
+      {
+        "title": "Polski",
+        "level": "Natywny"
+      },
+      {
+        "title": "Angielski",
+        "level": "B1"
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "Zainteresowania",
+    "child": [
+      "Nowe technologie",
+      "Gry video",
+      "gry logiczne"
+    ]
+  },
+  "skills": {
+    "title": "Umiejętności"
+  },
+  "additionalSkills": {
+    "title": "Dodatkowe"
+  },
+  "programs": {
+    "title": "Programy"
+  },
+  "experience": {
+    "title": "Doświadczenie",
+    "child": [
+      {
+        "date": [
+          "Czerwiec 2019",
+          "Do teraz"
+        ],
+        "title": "MDBootstrap",
+        "position": "Junior Angular and React developer ",
+        "description": "Tworzenie i rozwijanie komponentów dla pakietów MDBootstrap. Tworzenie dokumentacji dla komponentów. Kontakt na forum i obsługa klientów. Wykonywanie testów jednostkowych.",
+        "subcategory": [
+          {
+            "date": [
+              "Grudzień 2019",
+              "Do teraz"
+            ],
+            "title": "Angular Junior Developer",
+            "description": "Praca w technologiach: <br/> Angular 8, Git, HTML, SCSS, TypeScript, Unit tests - Jest"
+          },
+          {
+            "date": [
+              "Czerwiec 2019",
+              "Listopad 2019"
+            ],
+            "title": "React Junior Developer",
+            "description": "Praca w technologiach: <br/> React.js, TypeScript, Git, NodeJs, HTML, CSS, Unit tests - Jest"
+          }
+        ]
+      },
+      {
+        "date": [
+          "Październik 2018",
+          "Marzec 2019"
+        ],
+        "title": "Afisz Media SP. Z O.O.",
+        "position": "Web Designer",
+        "description": "Projektowanie graficzne szablonów stron internetowych. Tworzenie szablonu na podstawie grafiki utworzonej w programie Photoshop i instalacji panelu CMS na potrzeby hostingu klienta. Tworzenie i edycja grafiki.",
+        "subcategory": [
+          {
+            "description": "Praca w technologiach: <br/> • jQuery, CSS, HTML, PHP"
+          },
+          {
+            "description": "Programy: <br/> • Photoshop, Adobe XD"
+          }
+        ]
+      },
+      {
+        "date": [
+          "2014",
+          "2017"
+        ],
+        "title": "Technikum im. Tadeusza Kościuszki w Leżajsku",
+        "position": "Technik Informatyk",
+        "description": "Uzyskanie tytułu \"Technik Informatyk\" i zdobycie kwalifikacji E12, E13, E14."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projekty"
+  },
   "clause": ""
 }

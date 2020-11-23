@@ -1,0 +1,39 @@
+@import "variables";
+
+.user__img {
+  max-width: 61.63%;
+  max-height: 61.63%;
+  border-radius: 50%;
+  filter: saturate(0);
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+
+.user__name {
+  font-size: 2rem;
+  grid-area: name;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.user__position {
+  font-size: 1.4rem;
+  grid-area: position;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+@media screen and (min-width: $sm), print {
+  .user__img {
+    max-height: 140px;
+    max-width: 140px;
+  }
+
+  .user__data {
+    display: none;
+  }
+}

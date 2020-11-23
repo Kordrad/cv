@@ -2,11 +2,8 @@
 
 @import "styles/fonts/fonts";
 @import "styles/abstracts/functions";
+@import "variables";
 
-// START: Theme
-@import "styles/theme/light";
-@import "styles/theme/dark";
-// END: Theme
 
 body, html {
   margin: 0;
@@ -14,11 +11,6 @@ body, html {
   background-color: gray;
 }
 
-@media all and (max-width: 640px) {
-  :root {
-    font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
 
 a {
   color: unset;
@@ -26,7 +18,7 @@ a {
 }
 
 $min_width: 320px;
-$max_width: 640px;
+$max_width: $sm;
 $min_font: 10px;
 $max_font: 20px;
 
@@ -38,4 +30,40 @@ $max_font: 20px;
   :root {
     font-size: $min_font;
   }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+
+.text-header {
+  text-transform: uppercase;
+  position: relative;
+  font-size: $text-header-font-size;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 25px;
+  margin-bottom: 0;
+
+
+  &:before, &:after {
+    content: '';
+    height: $border-size;
+    background-color: $color;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+
+.section__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section__level {
+  color: rgba($color, 0.51);
 }

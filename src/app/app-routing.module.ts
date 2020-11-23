@@ -1,9 +1,6 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {PageComponent} from './components/page/page.component';
-
-// Pages
-
+import {PageComponent} from './components/ui/page/page.component';
 
 
 const routes: Routes = [

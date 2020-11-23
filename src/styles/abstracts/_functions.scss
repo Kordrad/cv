@@ -1,25 +1,3 @@
-@mixin theme($theme-name, $theme-map) {
-  @each $section, $map in $theme-map {
-    @if ($section == body) {
-      body#{$theme-name} {
-        background-color: map-get($map, background-color);
-        color: map-get($map, color);
-      }
-    } @else {
-      #{$theme-name$section} {
-        background-color: map-get($map, background-color);
-        color: map-get($map, color);
-        border: map-get($map, border);
-        border-left: map-get($map, border-left);
-        border-right: map-get($map, border-right);
-        border-top: map-get($map, border-top);
-        border-bottom: map-get($map, border-bottom);
-      }
-    }
-  }
-}
-
-
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
 }
