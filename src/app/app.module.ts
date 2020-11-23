@@ -9,11 +9,20 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {IconModule} from '@ant-design/icons-angular';
 
 
-import {PageComponent} from './components/page/page.component';
+import {PageComponent} from './components/ui/page/page.component';
 import {BoldPipe} from './pipe/bold.pipe';
 import {JoinPipe} from './pipe/join.pipe';
 import {SortByDatePipe} from './pipe/sort-by-date.pipe';
-import { NavComponent } from './components/nav/nav.component';
+import {NavComponent} from './components/ui/nav/nav.component';
+import {HasTranslationPipe} from './pipe/has-translation.pipe';
+import {PersonalInformationComponent} from './components/ui/personal-information/personal-information.component';
+import {AvatarSectionComponent} from './components/ui/avatar-section/avatar-section.component';
+import {SkillBoxComponent} from './components/ui/skill-box/skill-box.component';
+import { PersonalDetailsComponent } from './components/ui/personal-details/personal-details.component';
+import { ExperienceComponent } from './components/ui/experience/experience.component';
+import { CategoryExperienceComponent } from './components/ui/experience/category-experience/category-experience.component';
+import { TitleExperienceSectionComponent } from './components/ui/experience/title-experience-section/title-experience-section.component';
+import { ProjectBoxComponent } from './components/ui/project-box/project-box.component';
 
 // import {APP_BASE_HREF} from '@angular/common';
 // AoT requires an exported function for factories
@@ -29,6 +38,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     JoinPipe,
     SortByDatePipe,
     NavComponent,
+    HasTranslationPipe,
+    PersonalInformationComponent,
+    AvatarSectionComponent,
+    SkillBoxComponent,
+    PersonalDetailsComponent,
+    ExperienceComponent,
+    CategoryExperienceComponent,
+    TitleExperienceSectionComponent,
+    ProjectBoxComponent,
   ],
   imports: [
     BrowserModule,

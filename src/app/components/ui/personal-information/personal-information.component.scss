@@ -1,0 +1,26 @@
+@import "variables";
+
+.section__element {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1.32px solid $color;
+  padding: 3.5% 0;
+  position: relative;
+  color: $color;
+}
+
+.section__element, .section__content {
+  font-weight: 700;
+}
+
+.section__link {
+  text-decoration: none;
+}
+
+.section__icon {
+  font-weight: 400;
+  position: absolute;
+  left: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+}

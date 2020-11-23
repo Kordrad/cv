@@ -1,6 +1,7 @@
 {
   "name": "cv",
-  "version": "0.0.0",
+  "//": "Version, work update, fixing / update",
+  "version": "3.1.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

@@ -1,0 +1,19 @@
+<div class="skill-box">
+  <h3 class="text-header skill-box__title">{{skillTitle}}</h3>
+  <ul *ngIf="!!skillLevel" class="section__list skill-box__list">
+    <li *ngFor="let item of skillLevel" class="skill-box__list-element">
+      <span>{{item.title}}</span> <span class="section__level">{{item.level}}</span>
+    </li>
+  </ul>
+
+  <div class="skill-box__section">
+    <div *ngIf="!!additionalSkillTitle">
+      <h3 class="text-header">{{additionalSkillTitle}}</h3>
+      <p *ngIf="!!additionalSkills" class="skill-box__additional-skills">{{additionalSkills}}</p>
+    </div>
+    <div *ngIf="!!programsTitle">
+      <h3 class="text-header">{{programsTitle}}</h3>
+      <p *ngIf="!!programs" class="skill-box__additional-skills">{{programs}}</p>
+    </div>
+  </div>
+</div>

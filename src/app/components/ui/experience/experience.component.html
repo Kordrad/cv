@@ -1,0 +1,19 @@
+<app-title-experience-section
+  [date]="date"
+  [title]="title"
+  [position]="position"
+>
+</app-title-experience-section>
+<p>
+  {{description}}
+</p>
+
+<div class="experience__category-wrapper">
+  <app-sub-category-experience
+    *ngFor="let category of subcategory"
+    [date]="category.date"
+    [title]="category.title"
+    [description]="category.description"
+  >
+  </app-sub-category-experience>
+</div>

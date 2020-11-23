@@ -1,2 +1,31 @@
+/* MOBILE SIZING */
+//$xs: 320px; //mobile
+//$sm: 481px; //tablets
+//$md: 769px; //small devices
+//$lg: 1025px; //large / PC
+//$xl: 1201px;  //extra large
+
+$xs: 320px; //mobile
+$sm: 640px; //tablets
+$md: 720px; //small devices
+$lg: 209mm; //large / PC
+//$xl: 1201px;  //extra large
+
+
+/* SIZING */
+$page-height: 297mm;
+$space: 32px;
+$space-between-elements: 20px;
+$border-size: 5px;
+$user-details-font-size: 3rem;
+$text-header-font-size: 1.7rem;
+$text-font-size: 1.2rem;
+
+/* COLORS */
+
 $theme-dark: #343637;
 $theme-white: #fff;
+$main-color: #E6E6E8;
+$color: #362D2E;
+$color-inverted: #fff;
+

@@ -1,0 +1,30 @@
+@import "variables";
+
+.title--experience, .title--category {
+  position: relative;
+
+  &:before {
+    content: '';
+    height: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    background-color: $color;
+    position: absolute;
+    left: -$space;
+  }
+}
+
+.title-header {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+.title--category {
+  $margin: 12px;
+  &:before {
+    width: 5px;
+    left: -$margin;
+  }
+}
