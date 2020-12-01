@@ -44,6 +44,20 @@
     "child": [
       {
         "date": [
+          "Jule 2020",
+          "Until now"
+        ],
+        "title": "ValueAdd",
+        "position": "Junior Angular Developer",
+        "description": "Rozwój i wdrażanie nowych funkcjonalności do istniejących projektów. Manipulacja danymi REST API. Code review.",
+        "subcategory": [
+          {
+            "description": "Work in technologies: <br/> • Angular 8+, NGRX, RXJS, Scss,  RESTful API, Jest"
+          }
+        ]
+      },
+      {
+        "date": [
           "Czerwiec 2019",
           "Do teraz"
         ],

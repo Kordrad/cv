@@ -29,8 +29,8 @@
 
 @media screen and (min-width: $sm), print {
   .user__img {
-    max-height: 140px;
-    max-width: 140px;
+    max-height: $avatar-size;
+    max-width: $avatar-size;
   }
 
   .user__data {

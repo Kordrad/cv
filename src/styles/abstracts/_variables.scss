@@ -15,11 +15,25 @@ $lg: 209mm; //large / PC
 /* SIZING */
 $page-height: 297mm;
 $space: 32px;
-$space-between-elements: 20px;
+$space-between-elements: 18px;
 $border-size: 5px;
-$user-details-font-size: 3rem;
+$line-height: 18px;
+$paragraph-margin: 12px;
+$line-space: 8px;
+
+$avatar-size: 125px;
+
+
+//font
+$font-size: 10px;
+$font-size-xs: 15px;
+
 $text-header-font-size: 1.7rem;
 $text-font-size: 1.2rem;
+$text-date-size: 1.1rem;
+$user-details-font-size: 3rem;
+
+
 
 /* COLORS */
 
@@ -28,4 +42,8 @@ $theme-white: #fff;
 $main-color: #E6E6E8;
 $color: #362D2E;
 $color-inverted: #fff;
+
+
+$font-accent-1: rgba(0, 0, 0, 0.80);
+$font-accent-2: rgba(0, 0, 0, 0.5);
 
