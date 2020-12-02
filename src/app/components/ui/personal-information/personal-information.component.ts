@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {DetailsSectionListInterface} from '../../../domain/interfaces/details-section-list.interface';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { DetailsSectionListInterface } from '../../../domain/interfaces/details-section-list.interface';
 
 @Component({
   selector: 'app-personal-information',

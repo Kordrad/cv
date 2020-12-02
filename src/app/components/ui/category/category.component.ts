@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {ExperienceTitle} from '../../../domain/enums/experience-title.enum';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ExperienceTitle } from '../../../domain/enums/experience-title.enum';
 
 @Component({
   selector: 'app-category',
@@ -15,5 +15,5 @@ export class CategoryComponent {
   @Input() link: string;
   @Input() type = ExperienceTitle.experience;
 
-  readonly ExperienceTitle = ExperienceTitle;
+  readonly titleType = ExperienceTitle;
 }

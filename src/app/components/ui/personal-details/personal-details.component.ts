@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-personal-details',
@@ -8,5 +8,4 @@ import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 })
 export class PersonalDetailsComponent {
   @Input() title: string;
-
 }

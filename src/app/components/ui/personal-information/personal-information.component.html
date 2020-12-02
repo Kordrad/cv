@@ -1,21 +1,30 @@
-<h3 *ngIf="title" class="text-header section__header">{{title}}</h3>
+<h3 *ngIf="title" class="text-header section__header">{{ title }}</h3>
 <ul *ngIf="list" class="section__list">
   <li *ngFor="let element of list" class="section__element">
-    <i *ngIf="element?.icon"
-       [type]="element.icon"
-       theme="fill"
-       class="section__icon"
-       antIcon></i>
-    <a *ngIf="element.link" [href]="element.link" target="_blank" class="section__link">
+    <i
+      *ngIf="element?.icon"
+      [type]="element.icon"
+      theme="fill"
+      class="section__icon"
+      antIcon
+    ></i>
+    <a
+      *ngIf="element.link"
+      [href]="element.link"
+      target="_blank"
+      class="section__link"
+    >
       <ng-container
         [ngTemplateOutlet]="contentElement"
-        [ngTemplateOutletContext]="{ $implicit: element }"></ng-container>
+        [ngTemplateOutletContext]="{ $implicit: element }"
+      ></ng-container>
     </a>
 
-    <ng-container *ngIf="!element.link"
-                  [ngTemplateOutlet]="contentElement"
-                  [ngTemplateOutletContext]="{ $implicit: element }"></ng-container>
-
+    <ng-container
+      *ngIf="!element.link"
+      [ngTemplateOutlet]="contentElement"
+      [ngTemplateOutletContext]="{ $implicit: element }"
+    ></ng-container>
   </li>
 </ul>
 
@@ -23,7 +32,7 @@
   <ng-content></ng-content>
 </div>
 
-
 <ng-template #contentElement let-test>
-  {{test.title | translate}} <span class="section__level">{{test.level | translate}}</span>
+  {{ test.title | translate }}
+  <span class="section__level">{{ test.level | translate }}</span>
 </ng-template>

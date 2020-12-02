@@ -6,12 +6,13 @@ describe('AvatarSectionComponent', () => {
   let component: AvatarSectionComponent;
   let fixture: ComponentFixture<AvatarSectionComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [ AvatarSectionComponent ]
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [AvatarSectionComponent]
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AvatarSectionComponent);

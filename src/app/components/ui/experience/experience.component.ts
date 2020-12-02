@@ -1,6 +1,6 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {ExperienceSubcategoryInterface} from '../../../domain/interfaces/experience-subcategory.interface';
-import {ExperienceTitle} from '../../../domain/enums/experience-title.enum';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ExperienceSubcategoryInterface } from '../../../domain/interfaces/experience-subcategory.interface';
+import { ExperienceTitle } from '../../../domain/enums/experience-title.enum';
 
 @Component({
   selector: 'app-experience',

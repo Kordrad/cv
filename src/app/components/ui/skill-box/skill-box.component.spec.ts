@@ -6,12 +6,13 @@ describe('SkillBoxComponent', () => {
   let component: SkillBoxComponent;
   let fixture: ComponentFixture<SkillBoxComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [ SkillBoxComponent ]
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [SkillBoxComponent]
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(SkillBoxComponent);
