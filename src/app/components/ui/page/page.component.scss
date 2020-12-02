@@ -6,7 +6,6 @@ aside, main {
 
 .page {
   background-color: white;
-
 }
 
 aside {
@@ -35,21 +34,18 @@ main {
   display: none;
 }
 
-.projects {
-  column-count: 1;
+.page--projects {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: $space-between-elements;
-  app-project-box {
-    display: block;
-    margin-bottom: $space-between-elements;
-  }
+  margin-top: 12px;
 }
 
-//
 @media screen and (min-width: $sm), print {
   .page {
     display: grid;
     grid-template-areas: 'aside main';
-    grid-template-columns: $xs auto;
+    grid-template-columns: 300px auto;
     margin-top: 42px;
   }
 
@@ -57,7 +53,7 @@ main {
     display: block;
     position: relative;
     text-transform: uppercase;
-    height: 125px;
+    height: 112px;
 
     &:after {
       $size: 35px;
@@ -88,12 +84,14 @@ main {
     margin: 0;
   }
 
-  .projects {
-    column-count: 2;
-    app-project-box {
-      display: unset;
-    }
+  .page--projects {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+app-experience:not(:last-of-type) {
+  display: block;
+  margin-bottom: $space-between-elements;
 }
 
 
@@ -110,9 +108,10 @@ main {
     overflow: hidden;
     margin: 50px+42px auto;
   }
-  #clause {
+  .clause {
     position: absolute;
-    bottom: 25px;
+    bottom: $paragraph-margin;
+    padding-right: $space;
   }
 }
 

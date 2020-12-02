@@ -3,6 +3,7 @@ import {ActivatedRoute} from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
 import {IconService} from '@ant-design/icons-angular';
 import {CaretUpFill, GithubFill, LinkedinFill, MailFill, PhoneFill} from '@ant-design/icons-angular/icons';
+import {ExperienceTitle} from '../../../domain/enums/experience-title.enum';
 
 @Component({
   selector: 'app-page',
@@ -13,6 +14,7 @@ import {CaretUpFill, GithubFill, LinkedinFill, MailFill, PhoneFill} from '@ant-d
 
 
 export class PageComponent {
+  readonly categoryType = ExperienceTitle.category;
 
   constructor(
     private route: ActivatedRoute,

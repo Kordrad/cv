@@ -58,58 +58,52 @@
     "child": [
       {
         "title": "Angular 7+",
-        "level": "Medium"
+        "level": "Regular"
       },
       {
         "title": "RxJS",
-        "level": "basic"
+        "level": "Regular"
       },
       {
-        "title": "React.js",
-        "level": "6 month exp"
+        "title": "NGRX",
+        "level": "Regular"
       },
       {
         "title": "Typescript",
-        "level": "good"
+        "level": "Regular"
       },
       {
         "title": "JavaScript",
-        "level": "good"
+        "level": "Regular"
       },
       {
-        "title": "Node.js",
-        "level": "basic"
-      },
-      {
-        "title": "Git",
-        "level": ""
+        "title": "Git"
       },
       {
         "title": "scss",
-        "level": "good"
+        "level": "Advanced"
       },
       {
         "title": "jest",
-        "level": "medium"
+        "level": "regular"
       },
       {
-        "title": "jQuery",
-        "level": ""
+        "title": "RESTful API"
       }
     ]
   },
   "additionalSkills": {
-    "title": "Additional skills",
+    "title": "Basic skills",
     "child": [
+      "Node.js",
+      "jQuery",
+      "React.js",
       "Express",
       "Firebase",
-      "Less",
-      "MySql",
       "Next",
       "NoSql",
       "PHP",
       "React Native",
-      "SEO",
       "Vue.js",
       "WordPress"
     ]
@@ -130,8 +124,22 @@
     "child": [
       {
         "date": [
-          "June 2019",
+          "Jule 2020",
           "Until now"
+        ],
+        "title": "ValueAdd",
+        "position": "Junior Angular Developer",
+        "description": "Development and implementation of new functionalities to existing projects. REST API data manipulation. Code Review. ",
+        "subcategory": [
+          {
+            "description": "Work in technologies: <br/> • Angular 8+, NGRX, RXJS, Scss,  RESTful API, Jest"
+          }
+        ]
+      },
+      {
+        "date": [
+          "June 2019",
+          "June 2020"
         ],
         "title": "MDBootstrap",
         "position": "Junior Angular and React developer ",

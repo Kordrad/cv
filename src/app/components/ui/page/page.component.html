@@ -30,16 +30,16 @@
         </app-personal-information>
       </section>
       <section id="skill">
-      <app-skill-box
-        [skillTitle]="'skills.title' | translate"
-        [skillLevel]="'skills.child' | translate"
-        [additionalSkillTitle]="'additionalSkills.title' | translate"
-        [additionalSkills]="'additionalSkills.child' | translate | join: ', ' | uppercase"
-        [programsTitle]="'programs.title' | translate"
-        [programs]="'programs.child' | translate | join: ', ' | uppercase"
-      >
-      </app-skill-box>
-    </section>
+        <app-skill-box
+          [skillTitle]="'skills.title' | translate"
+          [skillLevel]="'skills.child' | translate"
+          [additionalSkillTitle]="'additionalSkills.title' | translate"
+          [additionalSkills]="'additionalSkills.child' | translate | join: ', ' | uppercase"
+          [programsTitle]="'programs.title' | translate"
+          [programs]="'programs.child' | translate | join: ', ' | uppercase"
+        >
+        </app-skill-box>
+      </section>
     </div>
   </aside>
   <main>
@@ -51,7 +51,7 @@
     </section>
     <section id="objective">
       <app-personal-details [title]="'objective.title' | translate">
-        <p>{{'objective.description' | translate}}</p>
+        <p class="text-paragraph">{{'objective.description' | translate}}</p>
       </app-personal-details>
     </section>
     <section id="experience">
@@ -69,18 +69,19 @@
 
     <section id="projects">
       <app-personal-details [title]="'projects.title' | translate">
-        <div class="projects">
-          <app-project-box *ngFor="let project of 'projects.child' | translate"
+        <div class="page--projects">
+          <app-category *ngFor="let project of 'projects.child' | translate"
                            [title]="project.title"
                            [link]="project.link"
                            [git]="project.git"
+                           [type]="categoryType"
           >
-          </app-project-box>
+          </app-category>
         </div>
       </app-personal-details>
     </section>
-    <p id="clause">
+    <i class="clause">
       {{'clause' | translate}}
-    </p>
+    </i>
   </main>
 </div>
