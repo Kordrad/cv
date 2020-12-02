@@ -26,7 +26,7 @@
       </section>
       <section id="hobbies">
         <app-personal-information [title]="'hobbies.title' | translate">
-          <p>{{'hobbies.child' | translate | join: ', ' }}</p>
+          <p>{{ 'hobbies.child' | translate | join: ', ' }}</p>
         </app-personal-information>
       </section>
       <section id="skill">
@@ -34,7 +34,9 @@
           [skillTitle]="'skills.title' | translate"
           [skillLevel]="'skills.child' | translate"
           [additionalSkillTitle]="'additionalSkills.title' | translate"
-          [additionalSkills]="'additionalSkills.child' | translate | join: ', ' | uppercase"
+          [additionalSkills]="
+            'additionalSkills.child' | translate | join: ', ' | uppercase
+          "
           [programsTitle]="'programs.title' | translate"
           [programs]="'programs.child' | translate | join: ', ' | uppercase"
         >
@@ -45,23 +47,24 @@
   <main>
     <section id="user-name" class="user-box">
       <div class="user-box__wrapper">
-        <h1 class="user-box__name">{{'user.name' | translate}}</h1>
-        <h2 class="user-box__position">{{'user.position' | translate}}</h2>
+        <h1 class="user-box__name">{{ 'user.name' | translate }}</h1>
+        <h2 class="user-box__position">{{ 'user.position' | translate }}</h2>
       </div>
     </section>
     <section id="objective">
       <app-personal-details [title]="'objective.title' | translate">
-        <p class="text-paragraph">{{'objective.description' | translate}}</p>
+        <p class="text-paragraph">{{ 'objective.description' | translate }}</p>
       </app-personal-details>
     </section>
     <section id="experience">
       <app-personal-details [title]="'experience.title' | translate">
-        <app-experience *ngFor="let work of 'experience.child' | translate"
-                        [title]="work.title"
-                        [date]="work.date"
-                        [position]="work.position"
-                        [description]="work.description"
-                        [subcategory]="work.subcategory"
+        <app-experience
+          *ngFor="let work of 'experience.child' | translate"
+          [title]="work.title"
+          [date]="work.date"
+          [position]="work.position"
+          [description]="work.description"
+          [subcategory]="work.subcategory"
         >
         </app-experience>
       </app-personal-details>
@@ -70,18 +73,19 @@
     <section id="projects">
       <app-personal-details [title]="'projects.title' | translate">
         <div class="page--projects">
-          <app-category *ngFor="let project of 'projects.child' | translate"
-                           [title]="project.title"
-                           [link]="project.link"
-                           [git]="project.git"
-                           [type]="categoryType"
+          <app-category
+            *ngFor="let project of 'projects.child' | translate"
+            [title]="project.title"
+            [link]="project.link"
+            [git]="project.git"
+            [type]="categoryType"
           >
           </app-category>
         </div>
       </app-personal-details>
     </section>
     <i class="clause">
-      {{'clause' | translate}}
+      {{ 'clause' | translate }}
     </i>
   </main>
 </div>

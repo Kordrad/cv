@@ -1,32 +1,28 @@
-import {BrowserModule, Title} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
+import { BrowserModule, Title } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {IconModule} from '@ant-design/icons-angular';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { IconModule } from '@ant-design/icons-angular';
 
-
-import {PageComponent} from './components/ui/page/page.component';
-import {BoldPipe} from './pipe/bold.pipe';
-import {JoinPipe} from './pipe/join.pipe';
-import {SortByDatePipe} from './pipe/sort-by-date.pipe';
-import {NavComponent} from './components/ui/nav/nav.component';
-import {HasTranslationPipe} from './pipe/has-translation.pipe';
-import {PersonalInformationComponent} from './components/ui/personal-information/personal-information.component';
-import {AvatarSectionComponent} from './components/ui/avatar-section/avatar-section.component';
-import {SkillBoxComponent} from './components/ui/skill-box/skill-box.component';
-import {PersonalDetailsComponent} from './components/ui/personal-details/personal-details.component';
-import {ExperienceComponent} from './components/ui/experience/experience.component';
-import {CategoryComponent} from './components/ui/category/category.component';
+import { PageComponent } from './components/ui/page/page.component';
+import { BoldPipe } from './pipe/bold.pipe';
+import { JoinPipe } from './pipe/join.pipe';
+import { NavComponent } from './components/ui/nav/nav.component';
+import { PersonalInformationComponent } from './components/ui/personal-information/personal-information.component';
+import { AvatarSectionComponent } from './components/ui/avatar-section/avatar-section.component';
+import { SkillBoxComponent } from './components/ui/skill-box/skill-box.component';
+import { PersonalDetailsComponent } from './components/ui/personal-details/personal-details.component';
+import { ExperienceComponent } from './components/ui/experience/experience.component';
+import { CategoryComponent } from './components/ui/category/category.component';
 
 // import {APP_BASE_HREF} from '@angular/common';
 // AoT requires an exported function for factories
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-}
+export const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>
+  new TranslateHttpLoader(http, './assets/i18n/', '.json');
 
 @NgModule({
   declarations: [
@@ -34,15 +30,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     PageComponent,
     BoldPipe,
     JoinPipe,
-    SortByDatePipe,
     NavComponent,
-    HasTranslationPipe,
     PersonalInformationComponent,
     AvatarSectionComponent,
     SkillBoxComponent,
     PersonalDetailsComponent,
     ExperienceComponent,
-    CategoryComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +45,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
+        useFactory: httpLoaderFactory,
         deps: [HttpClient]
       }
     }),
@@ -60,5 +54,4 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [Title],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}

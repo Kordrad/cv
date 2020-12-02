@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-avatar-section',
@@ -12,5 +12,4 @@ export class AvatarSectionComponent {
 
   @Input() url: string;
   @Input() id = 'user';
-
 }

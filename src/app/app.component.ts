@@ -1,7 +1,7 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
-import {first} from 'rxjs/operators';
-import {ContactInterface} from './domain/interfaces/contact.interface';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { first } from 'rxjs/operators';
+import { ContactInterface } from './domain/interfaces/contact.interface';
 
 interface Log {
   text: string;
@@ -14,25 +14,25 @@ interface Log {
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class AppComponent implements OnInit {
-
   private readonly linksKey = 'contact.data';
 
-  constructor(private translateService: TranslateService) {
-  }
+  constructor(private translateService: TranslateService) {}
 
   ngOnInit(): void {
     this.initConsoleLogs();
   }
 
   private initConsoleLogs(): void {
-    this.translateService.get(this.linksKey).pipe(first()).subscribe((links: ContactInterface[]) => {
+    this.translateService
+      .get(this.linksKey)
+      .pipe(first())
+      .subscribe((links: ContactInterface[]) => {
         const urls = [];
-        const padding = {text: '\n'};
-        links.forEach(({link}) => {
+        const padding = { text: '\n' };
+        links.forEach(({ link }) => {
           if (link.includes('http')) {
-            urls.push({text: link});
+            urls.push({ text: link });
           }
         });
 
@@ -65,8 +65,7 @@ export class AppComponent implements OnInit {
           padding
         ];
 
-        logs.forEach(({text, style}: Log) => console.log(`%c${text}`, style));
-      }
-    );
+        logs.forEach(({ text, style }: Log) => console.log(`%c${text}`, style));
+      });
   }
 }

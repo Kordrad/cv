@@ -1,9 +1,15 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-import {TranslateService} from '@ngx-translate/core';
-import {IconService} from '@ant-design/icons-angular';
-import {CaretUpFill, GithubFill, LinkedinFill, MailFill, PhoneFill} from '@ant-design/icons-angular/icons';
-import {ExperienceTitle} from '../../../domain/enums/experience-title.enum';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { IconService } from '@ant-design/icons-angular';
+import {
+  CaretUpFill,
+  GithubFill,
+  LinkedinFill,
+  MailFill,
+  PhoneFill
+} from '@ant-design/icons-angular/icons';
+import { ExperienceTitle } from '../../../domain/enums/experience-title.enum';
 
 @Component({
   selector: 'app-page',
@@ -11,20 +17,19 @@ import {ExperienceTitle} from '../../../domain/enums/experience-title.enum';
   styleUrls: ['./page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-
-
 export class PageComponent {
   readonly categoryType = ExperienceTitle.category;
 
   constructor(
     private route: ActivatedRoute,
     public translate: TranslateService,
-    private iconService: IconService) {
+    private iconService: IconService
+  ) {
     const lang = this.route.snapshot.paramMap.get('lang');
     this.translate.use(`${lang}`);
 
-
-    this.iconService.addIcon(...[PhoneFill, MailFill, LinkedinFill, GithubFill, CaretUpFill]);
+    this.iconService.addIcon(
+      ...[PhoneFill, MailFill, LinkedinFill, GithubFill, CaretUpFill]
+    );
   }
-
 }

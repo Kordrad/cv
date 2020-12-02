@@ -1,10 +1,9 @@
-import {Pipe, PipeTransform} from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'bold'
 })
 export class BoldPipe implements PipeTransform {
-
   transform(value: string, start: number = 1): any {
     if (value === '') {
       return '';
@@ -13,9 +12,10 @@ export class BoldPipe implements PipeTransform {
     let bold = '';
     const val = value.trim().split(' ');
 
-    val.map((word: string, id: number) => id >= start ? bold += ` ${word}` : text += ` ${word}`);
+    val.map((word: string, id: number) =>
+      id >= start ? (bold += ` ${word}`) : (text += ` ${word}`)
+    );
 
     return `${text.trim()} <b>${bold.trim()}</b>`;
   }
-
 }
