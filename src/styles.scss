@@ -1,16 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "styles/fonts/fonts";
-@import "styles/abstracts/functions";
-@import "variables";
+@import 'styles/fonts/fonts';
+@import 'styles/abstracts/functions';
+@import 'variables';
 
-
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   background-color: gray;
 }
-
 
 a {
   color: unset;
@@ -21,7 +20,7 @@ a {
   font-size: $font-size-xs;
 }
 
-@media all and (min-width: $sm) {
+@media all and (min-width: $sm), print {
   :root {
     font-size: $font-size;
   }
@@ -30,7 +29,6 @@ a {
 .text-uppercase {
   text-transform: uppercase;
 }
-
 
 .text-header {
   text-transform: uppercase;
@@ -41,8 +39,8 @@ a {
   gap: 25px;
   margin-bottom: 0;
 
-
-  &:before, &:after {
+  &:before,
+  &:after {
     content: '';
     height: $border-size;
     background-color: $color;
@@ -51,7 +49,6 @@ a {
     transform: translateY(-50%);
   }
 }
-
 
 .section__list {
   margin: 0;
