@@ -5,7 +5,7 @@
   },
   "objective": {
     "title": "Career Objective",
-    "description": "Looking for a position as Angular Front-End developer where I can exercise my skill and experience to prosper with the company."
+    "description": "I am looking for a position as Angular Front-End Developer where I can develop and use my skills and experience."
   },
   "contact": {
     "title": "Contact",
@@ -47,11 +47,7 @@
   },
   "hobbies": {
     "title": "Hobbies",
-    "child": [
-      "New technology",
-      "video games",
-      "logic games"
-    ]
+    "child": ["New technology", "video games", "logic games"]
   },
   "skills": {
     "title": "Skills",
@@ -77,15 +73,19 @@
         "level": "Regular"
       },
       {
-        "title": "Git"
+        "title": "jest",
+        "level": "regular"
       },
       {
         "title": "scss",
-        "level": "Advanced"
+        "level": "regular"
       },
       {
-        "title": "jest",
-        "level": "regular"
+        "title": "css3",
+        "level": "advanced"
+      },
+      {
+        "title": "Git"
       },
       {
         "title": "RESTful API"
@@ -93,16 +93,14 @@
     ]
   },
   "additionalSkills": {
-    "title": "Basic skills",
+    "title": "Additional",
     "child": [
-      "Node.js",
-      "jQuery",
-      "React.js",
-      "Express",
       "Firebase",
+      "jQuery",
       "Next",
-      "NoSql",
+      "Node.js",
       "PHP",
+      "React.js",
       "React Native",
       "Vue.js",
       "WordPress"
@@ -113,6 +111,7 @@
     "child": [
       "Adobe Photoshop",
       "Adobe XD",
+      "Figma",
       "Linux",
       "VS Code",
       "WebStorm",
@@ -123,10 +122,7 @@
     "title": "Experience",
     "child": [
       {
-        "date": [
-          "Jule 2020",
-          "Until now"
-        ],
+        "date": ["July 2020", "Until now"],
         "title": "ValueAdd",
         "position": "Junior Angular Developer",
         "description": "Development and implementation of new functionalities to existing projects. REST API data manipulation. Code Review. ",
@@ -137,37 +133,25 @@
         ]
       },
       {
-        "date": [
-          "June 2019",
-          "June 2020"
-        ],
+        "date": ["June 2019", "June 2020"],
         "title": "MDBootstrap",
         "position": "Junior Angular and React developer ",
-        "description": "Creating and developing components for the MDBootstrap packages. Creating documentation of created components. Contact on the forum and support customers. Making a Unit tests.",
+        "description": "Creating and developing components for the MDBootstrap packages. Creating documentation of created components. Contact on the forum and support customers.",
         "subcategory": [
           {
-            "date": [
-              "December 2019",
-              "Until now"
-            ],
+            "date": ["December 2019", "June 2020"],
             "title": "Angular Junior Developer",
             "description": "Work in technologies: <br/> Angular 8, Git, HTML, SCSS, TypeScript, Unit tests - Jest"
           },
           {
-            "date": [
-              "June 2019",
-              "November 2019"
-            ],
+            "date": ["June 2019", "November 2019"],
             "title": "React Junior Developer",
             "description": "Work in technologies: <br/> React.js, TypeScript, Git, NodeJs, HTML, CSS, Unit tests - Jest"
           }
         ]
       },
       {
-        "date": [
-          "October 2018",
-          "March 2019"
-        ],
+        "date": ["October 2018", "March 2019"],
         "title": "Afisz Media SP. Z O.O.",
         "position": "Web Designer",
         "description": "Making graphics design of templates for websites. Creating a template based on graphics created in Photoshop and CMS panel installation for client hosting. Creating and editing graphics.",
@@ -181,10 +165,7 @@
         ]
       },
       {
-        "date": [
-          "2014",
-          "2017"
-        ],
+        "date": ["2014", "2017"],
         "title": "Technical School of Tadeusz Kościuszko in Leżajsk",
         "position": "IT Technician",
         "description": "Obtaining the title of \"IT Technician\" and getting qualifications E12, E13, E14."
