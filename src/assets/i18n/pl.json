@@ -4,7 +4,7 @@
   },
   "objective": {
     "title": "Cel zawodowy",
-    "description": "Poszukuję stanowiska Angular Front-End Developer, w którym mogę wykorzystać swoje umiejętności i doświadczenie, aby dobrze prosperować w firmie."
+    "description": "Poszukuję stanowiska Angular Front-End Developer, w którym będę mógł się rozwijać i wykorzystywać swoje umiejętności i doświadczenie."
   },
   "contact": {
     "title": "Kontakt"
@@ -24,11 +24,7 @@
   },
   "hobbies": {
     "title": "Zainteresowania",
-    "child": [
-      "Nowe technologie",
-      "Gry video",
-      "gry logiczne"
-    ]
+    "child": ["Nowe technologie", "Gry video", "gry logiczne"]
   },
   "skills": {
     "title": "Umiejętności"
@@ -43,51 +39,36 @@
     "title": "Doświadczenie",
     "child": [
       {
-        "date": [
-          "Jule 2020",
-          "Until now"
-        ],
+        "date": ["Lipiec 2020", "Do teraz"],
         "title": "ValueAdd",
         "position": "Junior Angular Developer",
         "description": "Rozwój i wdrażanie nowych funkcjonalności do istniejących projektów. Manipulacja danymi REST API. Code review.",
         "subcategory": [
           {
-            "description": "Work in technologies: <br/> • Angular 8+, NGRX, RXJS, Scss,  RESTful API, Jest"
+            "description": "Praca w technologiach: <br/> • Angular 8+, NGRX, RXJS, Scss,  RESTful API, Jest"
           }
         ]
       },
       {
-        "date": [
-          "Czerwiec 2019",
-          "Do teraz"
-        ],
+        "date": ["Czerwiec 2019", "Czerwiec 2020"],
         "title": "MDBootstrap",
         "position": "Junior Angular and React developer ",
-        "description": "Tworzenie i rozwijanie komponentów dla pakietów MDBootstrap. Tworzenie dokumentacji dla komponentów. Kontakt na forum i obsługa klientów. Wykonywanie testów jednostkowych.",
+        "description": "Tworzenie i rozwijanie komponentów dla pakietów MDBootstrap. Tworzenie dokumentacji dla komponentów. Kontakt na forum i obsługa klientów.",
         "subcategory": [
           {
-            "date": [
-              "Grudzień 2019",
-              "Do teraz"
-            ],
+            "date": ["Grudzień 2019", "Czerwiec 2020"],
             "title": "Angular Junior Developer",
             "description": "Praca w technologiach: <br/> Angular 8, Git, HTML, SCSS, TypeScript, Unit tests - Jest"
           },
           {
-            "date": [
-              "Czerwiec 2019",
-              "Listopad 2019"
-            ],
+            "date": ["Czerwiec 2019", "Listopad 2019"],
             "title": "React Junior Developer",
             "description": "Praca w technologiach: <br/> React.js, TypeScript, Git, NodeJs, HTML, CSS, Unit tests - Jest"
           }
         ]
       },
       {
-        "date": [
-          "Październik 2018",
-          "Marzec 2019"
-        ],
+        "date": ["Październik 2018", "Marzec 2019"],
         "title": "Afisz Media SP. Z O.O.",
         "position": "Web Designer",
         "description": "Projektowanie graficzne szablonów stron internetowych. Tworzenie szablonu na podstawie grafiki utworzonej w programie Photoshop i instalacji panelu CMS na potrzeby hostingu klienta. Tworzenie i edycja grafiki.",
@@ -101,10 +82,7 @@
         ]
       },
       {
-        "date": [
-          "2014",
-          "2017"
-        ],
+        "date": ["2014", "2017"],
         "title": "Technikum im. Tadeusza Kościuszki w Leżajsku",
         "position": "Technik Informatyk",
         "description": "Uzyskanie tytułu \"Technik Informatyk\" i zdobycie kwalifikacji E12, E13, E14."
