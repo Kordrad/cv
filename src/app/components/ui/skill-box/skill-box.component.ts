@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { SkillBoxSectionListInterface } from '../../../domain/interfaces/skill-box-section-list.interface';
 
 @Component({
   selector: 'app-skill-box',
@@ -12,7 +11,7 @@ export class SkillBoxComponent {
   @Input() additionalSkillTitle: string;
   @Input() programsTitle: string;
 
-  @Input() skillLevel: SkillBoxSectionListInterface[];
+  @Input() skillLevel: string[];
   @Input() additionalSkills: string;
   @Input() programs: string;
 }
