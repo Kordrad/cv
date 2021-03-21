@@ -1,7 +1,3 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
-import { IconService } from '@ant-design/icons-angular';
 import {
   CaretUpFill,
   GithubFill,
@@ -9,7 +5,11 @@ import {
   MailFill,
   PhoneFill
 } from '@ant-design/icons-angular/icons';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ExperienceTitle } from '../../../domain/enums/experience-title.enum';
+import { IconService } from '@ant-design/icons-angular';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-page',

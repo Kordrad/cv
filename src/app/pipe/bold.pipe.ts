@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'bold'
 })
 export class BoldPipe implements PipeTransform {
-  transform(value: string, start: number = 1): any {
+  transform(value: string, start: number = 1): string {
     if (value === '') {
       return '';
     }

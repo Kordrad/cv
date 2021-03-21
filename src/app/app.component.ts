@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ContactInterface } from './domain/interfaces/contact.interface';
 import { TranslateService } from '@ngx-translate/core';
 import { first } from 'rxjs/operators';
-import { ContactInterface } from './domain/interfaces/contact.interface';
 
 interface Log {
   text: string;
@@ -65,6 +65,7 @@ export class AppComponent implements OnInit {
           padding
         ];
 
+        // eslint-disable-next-line no-console
         logs.forEach(({ text, style }: Log) => console.log(`%c${text}`, style));
       });
   }
