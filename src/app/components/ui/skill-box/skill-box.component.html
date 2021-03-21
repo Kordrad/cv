@@ -2,8 +2,7 @@
   <h3 class="text-header skill-box__title">{{ skillTitle }}</h3>
   <ul *ngIf="!!skillLevel" class="section__list skill-box__list">
     <li *ngFor="let item of skillLevel" class="skill-box__list-element">
-      <span>{{ item.title }}</span>
-      <span *ngIf="item.level" class="section__level">{{ item.level }}</span>
+      {{ item }}
     </li>
   </ul>
 
