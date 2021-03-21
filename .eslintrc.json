@@ -1,12 +1,6 @@
 {
   "root": true,
   "ignorePatterns": ["projects/**/*"],
-  "parser": "@typescript-eslint/parser", // Specifies the ESLint parser
-  "extends": [
-    "plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-    "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
-    "plugin:prettier/recommended" // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
-  ],
   "parserOptions": {
     "ecmaVersion": 2020, // Allows for the parsing of modern ECMAScript features
     "sourceType": "module" // Allows for the use of imports
@@ -18,20 +12,68 @@
         "project": ["tsconfig.json", "e2e/tsconfig.json"],
         "createDefaultProgram": true
       },
+      "plugins": ["jest", "@typescript-eslint"],
       "extends": [
-        "plugin:@angular-eslint/ng-cli-compat",
-        "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:jest/recommended",
+        "eslint:recommended"
       ],
+      "env": {
+        "jasmine": true,
+        "browser": true,
+        "node": true,
+        "jest/globals": true
+      },
       "rules": {
-        "@angular-eslint/component-selector": [
+        "prefer-object-spread": "error",
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": "error",
+        "no-caller": "error",
+        "no-bitwise": "error",
+        "no-constructor-return": "error",
+        "no-debugger": "error",
+        "no-new": "error",
+        "no-shadow": "off",
+        "no-unused-expressions": "error",
+        "no-var": "error",
+        "no-array-constructor": "error",
+        "prefer-const": "error",
+        "radix": ["error", "as-needed"],
+        "arrow-body-style": ["error", "as-needed"],
+        "eqeqeq": ["error", "always", { "null": "ignore" }],
+        "no-unused-vars": "off",
+        "no-restricted-syntax": "warn",
+        "no-restricted-imports": [
           "error",
           {
-            "type": "element",
-            "prefix": "app",
-            "style": "kebab-case"
+            "patterns": [
+              "packages/*",
+              "@rummy-ng-ui/**/public-api",
+              "@rummy-ng-ui/**/*.module"
+            ]
           }
         ],
+        "no-console": [
+          "error",
+          {
+            "allow": ["debug", "info", "time", "timeEnd", "trace", "error"]
+          }
+        ],
+        "sort-imports": [
+          "error",
+          {
+            "ignoreCase": false,
+            "ignoreDeclarationSort": false,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+            "allowSeparatedGroups": true
+          }
+        ],
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/explicit-module-boundary-types": "error",
+        "@typescript-eslint/no-shadow": "error",
         "@angular-eslint/directive-selector": [
           "error",
           {
@@ -40,16 +82,19 @@
             "style": "camelCase"
           }
         ],
-        "@typescript-eslint/explicit-member-accessibility": [
-          "off",
+        "@angular-eslint/component-selector": [
+          "error",
           {
-            "accessibility": "explicit"
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
           }
         ],
-        "arrow-parens": ["off", "always"],
-        "import/order": "off",
-        "no-shadow": "off",
-        "@typescript-eslint/no-shadow": ["error"]
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
       }
     },
     {

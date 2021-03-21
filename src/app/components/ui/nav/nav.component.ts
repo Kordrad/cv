@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
-import { Title } from '@angular/platform-browser';
 import { IconService } from '@ant-design/icons-angular';
 import { PrinterFill } from '@ant-design/icons-angular/icons';
+import { Title } from '@angular/platform-browser';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nav',
