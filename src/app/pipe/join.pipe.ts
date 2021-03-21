@@ -8,7 +8,7 @@ export class JoinPipe implements PipeTransform {
     value: string[] | number[] | string,
     separator: string = ',',
     splitter?: string
-  ): any {
+  ): string {
     if (value === '') {
       return '';
     }
