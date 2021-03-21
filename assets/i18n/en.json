@@ -52,58 +52,26 @@
   "skills": {
     "title": "Skills",
     "child": [
-      {
-        "title": "Angular 7+",
-        "level": "Regular"
-      },
-      {
-        "title": "RxJS",
-        "level": "Regular"
-      },
-      {
-        "title": "NGRX",
-        "level": "Regular"
-      },
-      {
-        "title": "Typescript",
-        "level": "Regular"
-      },
-      {
-        "title": "JavaScript",
-        "level": "Regular"
-      },
-      {
-        "title": "jest",
-        "level": "regular"
-      },
-      {
-        "title": "scss",
-        "level": "regular"
-      },
-      {
-        "title": "css3",
-        "level": "advanced"
-      },
-      {
-        "title": "Git"
-      },
-      {
-        "title": "RESTful API"
-      }
+      "Angular 7+",
+      "RxJS",
+      "NGRX",
+      "Typescript",
+      "JavaScript",
+      "jest",
+      "scss",
+      "css3",
+      "Git",
+      "RESTful API"
     ]
   },
   "additionalSkills": {
     "title": "Additional",
     "child": [
-      "Firebase",
-      "jQuery",
-      "Next",
-      "Node.js",
-      "PHP",
-      "React.js",
-      "React Native",
-      "Vue.js",
-      "WordPress"
+      "Code review",
+      "Team work",
+      "Pixel perfect",
+      "Version control",
+      "Design patterns"
     ]
   },
   "programs": {
@@ -125,7 +93,7 @@
         "date": ["July 2020", "Until now"],
         "title": "ValueAdd",
         "position": "Junior Angular Developer",
-        "description": "Development and implementation of new functionalities to existing projects. REST API data manipulation. Code Review. ",
+        "description": "Development and implementation of new functionalities to existing projects. REST API data manipulation. Code Review.",
         "subcategory": [
           {
             "description": "Work in technologies: <br/> • Angular 8+, NGRX, RXJS, Scss,  RESTful API, Jest"
@@ -166,9 +134,9 @@
       },
       {
         "date": ["2014", "2017"],
-        "title": "Technical School of Tadeusz Kościuszko in Leżajsk",
+        "title": "Technical School Complex",
         "position": "IT Technician",
-        "description": "Obtaining the title of \"IT Technician\" and getting qualifications E12, E13, E14."
+        "description": "Obtaining the title of \"IT Technician\" and getting qualifications E12, E13, E14 in Technical School Complex of Tadeusz Kościuszko in Leżajsk. "
       }
     ]
   },
