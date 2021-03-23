@@ -1,6 +1,7 @@
-@import "variables";
+@import 'variables';
 
-aside, main {
+aside,
+main {
   padding: $space;
 }
 
@@ -53,11 +54,11 @@ main {
     display: block;
     position: relative;
     text-transform: uppercase;
-    height: 112px;
+    height: 100px;
 
     &:after {
       $size: 35px;
-      content: "";
+      content: '';
       height: $size;
       width: $size;
       background-color: $main-color;
@@ -94,7 +95,6 @@ app-experience:not(:last-of-type) {
   margin-bottom: $space-between-elements;
 }
 
-
 @media screen and (min-width: $md), print {
   .page {
     transition: 0.4s;
@@ -116,11 +116,12 @@ app-experience:not(:last-of-type) {
 }
 
 @media print {
-  html, body, .page {
+  html,
+  body,
+  .page {
     height: $page-height;
   }
   .page {
     margin: 0;
   }
 }
-
