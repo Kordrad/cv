@@ -4,3 +4,4 @@
 npx --no-install pretty-quick
 pretty-quick --staged
 npm run lint
+git add .
