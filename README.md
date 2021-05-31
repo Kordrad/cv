@@ -9,7 +9,9 @@
   <a href="https://kordrad.github.io/cv/">
     <img src="https://img.shields.io/badge/Demo-%F0%9F%94%8E-blue" alt="Angular on npm" />
   </a>&nbsp;
-  <img src="https://img.shields.io/github/package-json/dependency-version/Kordrad/cv/@angular/core?color=dd1b16&label=Angular" />
+  <a>
+    <img src="https://img.shields.io/github/package-json/dependency-version/Kordrad/cv/@angular/core?color=dd1b16&label=Angular" />
+  </a>
 </p>
 
 ## ✒️ Description
@@ -47,9 +49,9 @@ Project presenting my CV as a website. You can visit this page on this [link](ht
 
 That command will deploy the production build to gh-pages. [Link](https://kordrad.github.io/cv/)!
 
-    npm run prod
+    npm run deploy
 
-## ✉️ Contact 
+## ✉️ Contact
 
 [![Linkedin](https://img.shields.io/badge/kordrad--369?style=flat-square&logo=linkedin&logoColor=white&color=blue)][linkedin]
 [![E-Mail](https://img.shields.io/badge/kord.stp@gmail.com--BB001B?style=flat-square&logo=gmail&logoColor=white)][email]
