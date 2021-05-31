@@ -1,0 +1,97 @@
+<div class="page">
+  <ng-container *ngIf="data$ | async as data">
+    <aside>
+      <section id="user" class="user">
+        <app-avatar-section
+          [name]="'user.name' | transloco"
+          [position]="'user.position' | transloco"
+          url="./assets/img/user.jpg"
+        >
+        </app-avatar-section>
+      </section>
+      <div class="information-section">
+        <section id="contact">
+          <app-information-section
+            [title]="'contact.title' | transloco"
+            [list]="data.contact"
+          >
+          </app-information-section>
+        </section>
+        <section id="languages">
+          <app-information-section
+            [title]="'languages.title' | transloco"
+            [list]="data.languages"
+            class="text-uppercase"
+          >
+          </app-information-section>
+        </section>
+        <section id="hobbies">
+          <app-information-section [title]="'hobbies.title' | transloco">
+            <p>{{ data.hobbies | join: ', ' }}</p>
+          </app-information-section>
+        </section>
+        <section id="skill">
+          <app-skill-section
+            [skillTitle]="'skills.title' | transloco"
+            [skillLevel]="data.skills"
+            [additionalSkillTitle]="'additionalSkills.title' | transloco"
+            [additionalSkills]="data.additionalSkills | join: ', ' | uppercase"
+            [programsTitle]="'programs.title' | transloco"
+            [programs]="data.programs | join: ', ' | uppercase"
+          >
+          </app-skill-section>
+        </section>
+      </div>
+    </aside>
+    <main>
+      <section id="user-name" class="user-box">
+        <div class="user-box__wrapper">
+          <h1 class="user-box__name">{{ 'user.name' | transloco }}</h1>
+          <h2 class="user-box__position">{{ 'user.position' | transloco }}</h2>
+        </div>
+      </section>
+      <section id="objective">
+        <app-personal-details [title]="'objective.title' | transloco">
+          <p class="text-paragraph">
+            {{ 'objective.description' | transloco }}
+          </p>
+        </app-personal-details>
+      </section>
+
+      <section id="experience">
+        <app-personal-details [title]="'experience.title' | transloco">
+          <app-experience
+            *ngFor="let work of data.experience"
+            [title]="work.title"
+            [date]="work.date"
+            [position]="work.position"
+            [description]="work.description"
+            [subcategory]="work.subcategory"
+          >
+          </app-experience>
+        </app-personal-details>
+      </section>
+
+      <section id="projects">
+        <app-personal-details [title]="'projects.title' | transloco">
+          <div class="page--projects">
+            <ng-container>
+              <app-category
+                *ngFor="let project of data.projects"
+                [title]="project.title"
+                [link]="project.link"
+                [git]="project.git"
+                [type]="categoryType"
+              >
+              </app-category>
+            </ng-container>
+          </div>
+        </app-personal-details>
+      </section>
+
+      <i class="clause">
+        {{ 'clause' | transloco }}
+      </i>
+    </main>
+  </ng-container>
+</div>

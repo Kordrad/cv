@@ -1,0 +1,42 @@
+@import 'variables';
+
+.title--experience,
+.title--category {
+  position: relative;
+  margin-bottom: $line-space;
+
+  &:before {
+    content: '';
+    height: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    background-color: $color;
+    position: absolute;
+    left: -$space;
+  }
+}
+
+.title--header {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.title--date {
+  color: $font-accent-2;
+  font-size: $text-date-size;
+}
+
+.title--category {
+  $line-position: 12px;
+  margin-top: 0;
+
+  &:before {
+    width: 5px;
+    left: -$line-position;
+  }
+}
+
+.title--project {
+  color: $font-accent-2;
+}
