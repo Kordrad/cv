@@ -24,7 +24,7 @@
   },
   "hobbies": {
     "title": "Zainteresowania",
-    "child": ["Nowe technologie", "Gry video", "gry logiczne"]
+    "data": ["Nowe technologie", "Gry video", "gry logiczne"]
   },
   "skills": {
     "title": "Umiejętności"
@@ -37,15 +37,15 @@
   },
   "experience": {
     "title": "Doświadczenie",
-    "child": [
+    "data": [
       {
         "date": ["Lipiec 2020", "Do teraz"],
         "title": "ValueAdd",
-        "position": "Junior Angular Developer",
+        "position": "Angular Developer",
         "description": "Rozwój i wdrażanie nowych funkcjonalności do istniejących projektów. Manipulacja danymi REST API. Code review.",
         "subcategory": [
           {
-            "description": "Praca w technologiach: <br/> • Angular 8+, NGRX, RXJS, Scss,  RESTful API, Jest"
+            "description": "Praca w technologiach: <br/> • Angular 8+, NGRX, RXJS, Scss,  RESTful API, Jest, Ionic"
           }
         ]
       },
@@ -92,5 +92,5 @@
   "projects": {
     "title": "Projekty"
   },
-  "clause": ""
+  "clause": " "
 }
