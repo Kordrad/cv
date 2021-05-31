@@ -2,8 +2,8 @@
   "root": true,
   "ignorePatterns": ["projects/**/*"],
   "parserOptions": {
-    "ecmaVersion": 2020, // Allows for the parsing of modern ECMAScript features
-    "sourceType": "module" // Allows for the use of imports
+    "ecmaVersion": 2020,
+    "sourceType": "module"
   },
   "overrides": [
     {
@@ -18,7 +18,8 @@
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates",
         "plugin:jest/recommended",
-        "eslint:recommended"
+        "eslint:recommended",
+        "plugin:@angular-eslint/recommended--extra"
       ],
       "env": {
         "jasmine": true,
@@ -42,7 +43,13 @@
         "prefer-const": "error",
         "radix": ["error", "as-needed"],
         "arrow-body-style": ["error", "as-needed"],
-        "eqeqeq": ["error", "always", { "null": "ignore" }],
+        "eqeqeq": [
+          "error",
+          "always",
+          {
+            "null": "ignore"
+          }
+        ],
         "no-unused-vars": "off",
         "no-restricted-syntax": "warn",
         "no-restricted-imports": [
