@@ -47,11 +47,11 @@
   },
   "hobbies": {
     "title": "Hobbies",
-    "child": ["New technology", "video games", "logic games"]
+    "data": ["New technology", "video games", "logic games"]
   },
   "skills": {
     "title": "Skills",
-    "child": [
+    "data": [
       "Angular 7+",
       "RxJS",
       "NGRX",
@@ -66,7 +66,7 @@
   },
   "additionalSkills": {
     "title": "Additional",
-    "child": [
+    "data": [
       "Code review",
       "Team work",
       "Pixel perfect",
@@ -76,7 +76,7 @@
   },
   "programs": {
     "title": "Programs",
-    "child": [
+    "data": [
       "Adobe Photoshop",
       "Adobe XD",
       "Figma",
@@ -88,15 +88,15 @@
   },
   "experience": {
     "title": "Experience",
-    "child": [
+    "data": [
       {
         "date": ["July 2020", "Until now"],
         "title": "ValueAdd",
-        "position": "Junior Angular Developer",
+        "position": "Angular Developer",
         "description": "Development and implementation of new functionalities to existing projects. REST API data manipulation. Code Review.",
         "subcategory": [
           {
-            "description": "Work in technologies: <br/> • Angular 8+, NGRX, RXJS, Scss,  RESTful API, Jest"
+            "description": "Work in technologies: <br/> • Angular 8+, NGRX, RXJS, Scss,  RESTful API, Jest, Ionic"
           }
         ]
       },
@@ -142,7 +142,7 @@
   },
   "projects": {
     "title": "Projects",
-    "child": [
+    "data": [
       {
         "title": "Bakery Fantazja",
         "link": "cukiernia-fantazja.netlify.com",
@@ -155,5 +155,5 @@
       }
     ]
   },
-  "clause": ""
+  "clause": " "
 }
