@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { ContactInterface } from './domain/interfaces/contact.interface';
-import { TranslateService } from '@ngx-translate/core';
-import { first } from 'rxjs/operators';
+import { TranslocoService } from '@ngneat/transloco';
+import { filter, first } from 'rxjs/operators';
 
 interface ConsoleInfoInterface {
   text: string;
@@ -42,7 +41,7 @@ export class AppComponent implements OnInit {
     }
   ];
 
-  constructor(private translateService: TranslateService) {}
+  constructor(private translateService: TranslocoService) {}
 
   ngOnInit(): void {
     this.handleLinks();
@@ -50,15 +49,16 @@ export class AppComponent implements OnInit {
 
   private handleLinks(): void {
     this.translateService
-      .get(this.linksKey)
-      .pipe(first())
-      .subscribe((links: ContactInterface[]) => {
-        const urls = [];
-        links.forEach(({ link }) => {
-          if (link.includes('http')) {
-            urls.push({ text: link });
-          }
-        });
+      .selectTranslate(this.linksKey)
+      .pipe(
+        filter((e) => e.length),
+        first()
+      )
+      .subscribe((links) => {
+        const urls = links
+          .filter(({ link }) => link.includes('http'))
+          .map(({ link: text }) => ({ text }));
+
         this.displayConsoleInfo(urls);
       });
   }
@@ -66,6 +66,7 @@ export class AppComponent implements OnInit {
   private displayConsoleInfo(urls: ConsoleInfoInterface[]) {
     const space: ConsoleInfoInterface = { text: '\n' };
     [space, ...this.consoleInfo, ...urls, space].forEach(({ text, style }) =>
+      // eslint-disable-next-line no-restricted-syntax
       console.info(`%c${text}`, style)
     );
   }

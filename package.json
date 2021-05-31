@@ -35,8 +35,7 @@
     "@angular/platform-browser-dynamic": "~11.2.6",
     "@angular/router": "~11.2.6",
     "@ant-design/icons-angular": "^11.0.1",
-    "@ngx-translate/core": "^13.0.0",
-    "@ngx-translate/http-loader": "^6.0.0",
+    "@ngneat/transloco": "^2.20.1",
     "rxjs": "^6.6.6",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"

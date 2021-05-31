@@ -1,0 +1,42 @@
+@import 'variables';
+
+nav {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(50, 54, 57);
+  z-index: 999;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  color: white;
+
+  i {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  img {
+    max-height: 20px;
+
+    &:not(:first-of-type) {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: $sm) {
+  nav {
+    bottom: unset;
+    top: 0;
+  }
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+}

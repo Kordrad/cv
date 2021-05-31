@@ -1,0 +1,18 @@
+@import 'variables';
+
+.experience__description {
+  margin-bottom: $paragraph-margin;
+}
+
+.experience__category-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: $space-between-elements;
+  margin-top: 12px;
+}
+
+@media screen and (min-width: $md), print {
+  .experience__category-wrapper {
+    grid-template-columns: repeat(2, auto);
+  }
+}
