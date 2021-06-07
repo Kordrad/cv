@@ -1,9 +1,23 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  OnDestroy,
+  OnInit
+} from '@angular/core';
 import { IconService } from '@ant-design/icons-angular';
 import { PrinterFill } from '@ant-design/icons-angular/icons';
-import { Title } from '@angular/platform-browser';
+import { UtilsService } from '../services/utils.service';
+import { Subject } from 'rxjs';
+import { distinctUntilChanged, takeUntil } from 'rxjs/operators';
 import { TranslocoService } from '@ngneat/transloco';
+import { Title } from '@angular/platform-browser';
+
+interface LanguageLink {
+  url: string;
+  img: string;
+  alt: string;
+}
 
 @Component({
   selector: 'app-nav',
@@ -11,24 +25,61 @@ import { TranslocoService } from '@ngneat/transloco';
   styleUrls: ['./nav.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NavComponent {
-  title: string;
+export class NavComponent implements OnInit, OnDestroy {
+  title = '';
+
+  readonly languages: LanguageLink[] = [
+    {
+      url: 'pl',
+      img:
+        'https://raw.githubusercontent.com/madebybowtie/FlagKit/master/Assets/PNG/PL%402x.png',
+      alt: 'Poland'
+    },
+    {
+      url: 'en',
+      img:
+        'https://raw.githubusercontent.com/madebybowtie/FlagKit/master/Assets/PNG/GB%402x.png',
+      alt: 'English'
+    }
+  ];
+
+  private readonly userName$ = this.translate.selectTranslate('user.name');
+  private readonly ngUnsubscribe$ = new Subject();
 
   constructor(
-    private route: ActivatedRoute,
+    private iconService: IconService,
+    private translations: UtilsService,
     private translate: TranslocoService,
     private titleService: Title,
-    private iconService: IconService
+    private cdr: ChangeDetectorRef
   ) {
-    this.title = this.titleService.getTitle();
     this.iconService.addIcon(...[PrinterFill]);
   }
 
+  ngOnDestroy(): void {
+    this.ngUnsubscribe$.next();
+    this.ngUnsubscribe$.complete();
+  }
+
+  ngOnInit(): void {
+    this.setTitleByTranslate();
+  }
+
   changeLang(lang: string): void {
-    const userName = this.translate.translate('user.name');
     this.translate.setActiveLang(lang);
-    this.title = `${userName} - CV ${lang.toUpperCase()}`;
-    this.titleService.setTitle(this.title);
+  }
+
+  setTitleByTranslate(): void {
+    this.userName$
+      .pipe(distinctUntilChanged(), takeUntil(this.ngUnsubscribe$))
+      .subscribe((name) => {
+        this.title = this.translations.generateTitle(
+          name,
+          this.translate.getActiveLang()
+        );
+        this.titleService.setTitle(this.title);
+        this.cdr.detectChanges();
+      });
   }
 
   print(): void {

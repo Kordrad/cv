@@ -11,10 +11,11 @@ import { CategoryComponent } from './components/category/category.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { IconModule } from '@ant-design/icons-angular';
 import { HomeComponent } from './pages/home/home.component';
+import { TranslationGuard } from '../../core/guards/translation.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: '/en', pathMatch: 'full' },
-  { path: ':lang', component: HomeComponent }
+  { path: ':lang', component: HomeComponent, canActivate: [TranslationGuard] }
 ];
 
 @NgModule({
@@ -33,6 +34,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     TranslocoModule,
     IconModule
-  ]
+  ],
+  providers: [TranslationGuard]
 })
 export class HomeModule {}

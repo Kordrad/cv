@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { TranslocoModule } from '@ngneat/transloco';
 import { TranslocoRootModule } from './modules/transloco/transloco-root.module';
 import { IconModule } from '@ant-design/icons-angular';
+import { UtilsService } from './core/services/utils.service';
 
 @NgModule({
   declarations: [AppComponent, NavComponent],
@@ -18,7 +19,7 @@ import { IconModule } from '@ant-design/icons-angular';
     TranslocoRootModule,
     IconModule
   ],
-  providers: [Title],
+  providers: [Title, UtilsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
