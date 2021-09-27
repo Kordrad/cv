@@ -68,6 +68,7 @@
   "additionalSkills": {
     "title": "Additional",
     "data": [
+      "NativeScript",
       "Code review",
       "Team work",
       "Pixel perfect",
@@ -78,20 +79,31 @@
   "programs": {
     "title": "Programs",
     "data": [
-      "Adobe Photoshop",
-      "Adobe XD",
-      "Figma",
+      "macOS",
       "Linux",
-      "VS Code",
       "WebStorm",
-      "Windows"
+      "Windows",
+      "Figma",
+      "Adobe XD",
+      "Adobe Photoshop",
+      "VS Code"
     ]
   },
   "experience": {
     "title": "Experience",
     "data": [
       {
-        "date": ["July 2020", "Until now"],
+        "date": ["September 2021", "Until now"],
+        "title": "Astrokyon",
+        "position": "Frontend Developer",
+        "subcategory": [
+          {
+            "description": "Work in technologies: <br/> • Angular 8+, NativeScript, NGRX, RXJS, Scss, RESTful API, React"
+          }
+        ]
+      },
+      {
+        "date": ["July 2020", "August 2021"],
         "title": "ValueAdd",
         "position": "Angular Developer",
         "description": "Development and implementation of new functionalities to existing projects. REST API data manipulation. Code Review.",
