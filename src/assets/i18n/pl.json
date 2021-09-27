@@ -39,7 +39,17 @@
     "title": "Doświadczenie",
     "data": [
       {
-        "date": ["Lipiec 2020", "Do teraz"],
+        "date": ["Wrzesień 2021", "Do teraz"],
+        "title": "Astrokyon",
+        "position": "Frontend Developer",
+        "subcategory": [
+          {
+            "description": "Praca w technologiach: <br/> • Angular 8+, NativeScript, NGRX, RXJS, Scss, RESTful API, React"
+          }
+        ]
+      },
+      {
+        "date": ["Lipiec 2020", "Sierpień 2021"],
         "title": "ValueAdd",
         "position": "Angular Developer",
         "description": "Rozwój i wdrażanie nowych funkcjonalności do istniejących projektów. Manipulacja danymi REST API. Code review.",

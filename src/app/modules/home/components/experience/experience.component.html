@@ -1,10 +1,10 @@
 <app-category [date]="date" [title]="title" [position]="position">
 </app-category>
-<p class="text-paragraph experience__description">
+<p class="text-paragraph experience__description" *ngIf="description">
   {{ description }}
 </p>
 
-<div class="experience__category-wrapper">
+<div class="experience__category-wrapper" *ngIf="subcategory">
   <div [ngClass]="{ 'no-margin': !title }" *ngFor="let category of subcategory">
     <app-category
       [title]="category.title"

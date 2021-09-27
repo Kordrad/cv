@@ -42,11 +42,16 @@ main {
   margin-top: 12px;
 }
 
+app-experience:not(:last-of-type) {
+  display: block;
+  margin-bottom: $space-between-elements;
+}
+
 @media screen and (min-width: $sm), print {
   .page {
     display: grid;
     grid-template-areas: 'aside main';
-    grid-template-columns: 300px auto;
+    grid-template-columns: 270px auto;
     margin-top: 42px;
   }
 
@@ -87,12 +92,8 @@ main {
 
   .page--projects {
     grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
   }
-}
-
-app-experience:not(:last-of-type) {
-  display: block;
-  margin-bottom: $space-between-elements;
 }
 
 @media screen and (min-width: $md), print {
