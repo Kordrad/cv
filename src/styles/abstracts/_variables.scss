@@ -6,7 +6,7 @@
 //$xl: 1201px;  //extra large
 
 $xs: 320px; //mobile
-$sm: 640px; //tablets
+$sm: 678px; //tablets
 $md: 720px; //small devices
 $lg: 209mm; //large / PC
 //$xl: 1201px;  //extra large
@@ -14,11 +14,11 @@ $lg: 209mm; //large / PC
 /* SIZING */
 $page-height: 297mm;
 $space: 32px;
-$space-between-elements: 18px;
+$space-between-elements: 16px;
+$space-between-elements-md: 64px;
 $border-size: 5px;
 $line-height: 18px;
-$paragraph-margin: 12px;
-$line-space: 8px;
+$paragraph-margin: 8px;
 
 $avatar-size: 125px;
 
@@ -26,7 +26,7 @@ $avatar-size: 125px;
 $font-size: 10px;
 $font-size-xs: 12px;
 
-$text-header-font-size: 1.7rem;
+$text-header-font-size: 1.5rem;
 $text-font-size: 1.2rem;
 $text-date-size: 1.1rem;
 $user-details-font-size: 3rem;

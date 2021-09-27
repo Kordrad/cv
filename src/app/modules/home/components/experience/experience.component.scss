@@ -1,14 +1,18 @@
 @import 'variables';
 
 .experience__description {
-  margin-bottom: $paragraph-margin;
 }
 
 .experience__category-wrapper {
   display: grid;
   grid-template-columns: repeat(1, auto);
   gap: $space-between-elements;
-  margin-top: 12px;
+}
+
+.experience__category-wrapper,
+.experience__description {
+  margin-top: $paragraph-margin;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: $md), print {
